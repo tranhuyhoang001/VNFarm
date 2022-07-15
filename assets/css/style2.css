@@ -1,0 +1,276 @@
+:root {
+  --color-primary: #7fb640;
+  --text-primary: #333949;
+
+  --jade-green-color: #249371;
+  --turquoise-color: #00cc9b;
+  --purple-color: #8c2285;
+  --green-color: #598f1b;
+  --green-bold: #289b15;
+  --gold-color: #c09515;
+  --blue-color: #0e78a5;
+  --black-color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.ml-6 {
+  margin-left: 6px;
+}
+
+.mr-6 {
+  margin-right: 6px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.ml-24 {
+  margin-left: 24px !important;
+}
+
+.mt-24 {
+  margin-top: 24px !important;
+}
+
+.relative {
+  position: relative;
+}
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 32px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #7fb640;
+}
+
+.btn-turquoise {
+  background-color: #00cc9b;
+}
+
+.btn-gold {
+  background-color: #a69605;
+}
+
+.btn-brown {
+  background-color: #a7330a;
+}
+
+.btn-blue {
+  background-color: #107b8c;
+}
+
+.header-banner {
+  background-color: var(--green-bold);
+  height: 44px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+
+.header-banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header-function {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 164px;
+}
+
+.header-search {
+  position: relative;
+}
+
+.header-search-input {
+  padding: 12px 22px;
+  width: 450px;
+  height: 40px;
+  border: 1px solid #7fb640;
+  border-radius: 8px;
+}
+
+.header-search-input:focus {
+  border: 1px solid #7fb640;
+}
+
+.header-search-icon {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.header-list-btn {
+  display: flex;
+  align-items: center;
+}
+
+.header-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.header-heart-btn {
+  background-color: #e2f8d4;
+}
+
+.header-cart-btn {
+  background-color: #d4f3f8;
+}
+
+.header-amount {
+  position: absolute;
+  top: -5px;
+  left: 22px;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  line-height: 14px;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+}
+
+.header-heart-amount {
+  background: #6cab43;
+}
+
+.header-cart-amount {
+  background: #107b8c;
+}
+
+.header-navbar {
+  height: 66px;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.header-navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  font-weight: 700;
+}
+
+.header-navbar-btn {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 260px;
+  height: 40px;
+  background-color: #7fb640;
+  border-radius: 8px;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.header-navbar-content ul {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.header-navbar-content li {
+  display: inline-block;
+  margin-left: 42px;
+  cursor: pointer;
+}
+
+.header-navbar-support {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.header-navbar-phone {
+  font-weight: 700;
+  font-size: 20px;
+  color: #7fb640;
+}
+
+.header-navbar-desc {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--black-color);
+  margin-top: 6px;
+}
+
+/* featured */
+.featured-1 {
+  height: 480px;
+  background-color: #c4ead9;
+  border-radius: 8px;
+}
+
+.featured-2 {
+  height: 480px;
+  background-color: var(--jade-green-color);
+  border-radius: 8px;
+}
+
+.featured-34 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.featured-3 {
+  height: 230px;
+  background-color: #c4ead9;
+  border-radius: 8px;
+}
+
+.featured-4 {
+  height: 230px;
+  background-color: #c4ead9;
+  border-radius: 8px;
+}
