@@ -1,0 +1,11 @@
+.list-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 45px;
+  margin-bottom: 90px;
+  &__logo:not(:first-child) {
+    border-left: 1px solid #eaeaea;
+    padding-left: 15px;
+  }
+}

@@ -1,19 +1,19 @@
-.category-list {
+.list-category {
   margin: 38px 0 44px 0;
   white-space: nowrap;
   overflow-x: auto;
 }
 
-.category-list::-webkit-scrollbar {
+.list-category::-webkit-scrollbar {
   width: 20px;
 }
 
-.category-list::-webkit-scrollbar-track {
+.list-category::-webkit-scrollbar-track {
   background-color: transparent;
   border-radius: 100px;
 }
 
-.category-list::-webkit-scrollbar-thumb {
+.list-category::-webkit-scrollbar-thumb {
   border-radius: 100px;
   border: 6px solid transparent;
   background-clip: content-box;
