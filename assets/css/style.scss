@@ -81,6 +81,29 @@ a {
   }
 }
 
+@media (max-width: 740px) {
+  .brand-name {
+    font-size: 14px;
+  }
+
+  .homepage-heading {
+    font-size: 20px;
+
+    &__text {
+      display: inline-block;
+      position: relative;
+
+      &::before {
+        top: -12px;
+      }
+
+      &::after {
+        top: -12px;
+      }
+    }
+  }
+}
+
 @import 'global';
 @import 'header';
 @import 'featured';

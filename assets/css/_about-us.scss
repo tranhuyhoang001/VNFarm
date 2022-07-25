@@ -44,3 +44,12 @@
     font-size: 12px;
   }
 }
+
+@media (max-width: 740px) {
+  .about-us__banner-1,
+  .about-us__banner-2,
+  .about-us__banner-3,
+  .about-us__banner-4 {
+    margin: 0 auto;
+  }
+}

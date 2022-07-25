@@ -9,3 +9,12 @@
     padding-left: 15px;
   }
 }
+
+@media (max-width: 740px) {
+  .list-media {
+    overflow-x: auto;
+  }
+  .list-media::-webkit-scrollbar {
+    display: none;
+  }
+}

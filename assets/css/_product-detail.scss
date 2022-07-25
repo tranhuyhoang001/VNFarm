@@ -27,6 +27,14 @@
 .product-image {
   height: 524px;
   border-radius: 8px;
+  &__small {
+    border-radius: 8px;
+    height: 116px;
+    &.selected {
+      height: 116px;
+      border: 4px solid #7fb640;
+    }
+  }
 }
 
 .product-detail {

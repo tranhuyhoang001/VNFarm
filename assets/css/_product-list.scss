@@ -36,10 +36,6 @@
   &__btn {
     display: inline-block;
     margin-top: 12px;
-    // position: absolute;
-    // right: 30px;
-    // transform: translate(-50%, 0);
-    // bottom: 10px;
   }
   &__discount {
     position: absolute;
@@ -62,6 +58,15 @@
     right: 16.5px;
     &:hover {
       cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .product-box {
+    padding: 33px 8px 10px 8px;
+    &__original-price {
+      display: none;
     }
   }
 }

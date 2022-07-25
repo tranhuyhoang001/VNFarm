@@ -234,3 +234,44 @@ input[type='range']::-moz-range-thumb {
   width: 30px;
   height: 30px;
 }
+
+.l-none {
+  display: none !important;
+}
+
+@media (max-width: 740px) {
+  .s-none {
+    display: none !important;
+  }
+  .s-block {
+    display: block !important;
+  }
+  .s-px-20 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .s-mt-16 {
+    margin-top: 16px !important;
+  }
+  .s-mt-24 {
+    margin-top: 24px !important;
+  }
+  .s-mt-111 {
+    margin-top: 111px !important;
+  }
+  .s-w-full {
+    width: 100% !important;
+  }
+
+  .s-text-16 {
+    font-size: 16px !important;
+  }
+
+  .btn {
+    padding: 8px 22px;
+    border-radius: 32px;
+    // text-transform: none;
+    font-weight: 700;
+    font-size: 10px;
+  }
+}

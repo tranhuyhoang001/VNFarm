@@ -1,13 +1,17 @@
 .footer {
   &__list-title {
-    align-items: center;
+    // align-items: center;
     margin-bottom: 25px;
   }
   &__title {
+    margin-top: 15px;
+    margin-bottom: 25px;
     font-weight: 700;
     font-size: 18px;
   }
   &__big-title {
+    margin-top: 8px;
+    margin-bottom: 18px;
     font-weight: 700;
     font-size: 24px;
   }
@@ -15,6 +19,7 @@
     margin-bottom: 16px;
   }
   &__col-1 {
+    margin-top: 25px;
     & li {
       display: flex;
       align-items: center;
@@ -52,7 +57,7 @@
   }
   &__copyright {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     height: 68px;
@@ -68,6 +73,54 @@
     &-desc {
       font-size: 12px;
       color: #b5b5b5;
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .footer-mobile {
+    &__payment {
+      margin: 21px 0;
+    }
+    &__call {
+      margin-top: 68px;
+      display: flex;
+      align-items: center;
+    }
+    &__call-info {
+      margin-left: 6px;
+      text-align: center;
+    }
+    &__number {
+      font-weight: 700;
+      font-size: 20px;
+      color: #7fb640;
+    }
+    &__working-time {
+      margin-top: 2px;
+      font-size: 12px;
+      color: #b5b5b5;
+    }
+    &__follow-us {
+      width: 100%;
+      margin-top: 22px;
+      text-align: center;
+    }
+    &__list-follow-icon {
+      margin-top: 22px;
+      padding: 0 85px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__follow-icon {
+      width: 52px;
+    }
+    &__copyright-text {
+      width: 100%;
+      margin-top: 27px;
+      margin-bottom: 60px;
+      text-align: center;
     }
   }
 }
