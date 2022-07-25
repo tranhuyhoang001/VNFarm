@@ -31,6 +31,18 @@
 
 .product-detail {
   margin-left: 16px;
+  &__capacity {
+    font-weight: 400;
+    padding: 4px 10px;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    margin-left: 6px;
+    &-selected {
+      border: 1px solid #7fb640;
+      color: #7fb640;
+      font-weight: 600;
+    }
+  }
   &__heading {
     font-weight: 700;
     font-size: 40px;

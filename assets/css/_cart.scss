@@ -140,4 +140,13 @@
       opacity: 0.9;
     }
   }
+  &__summary-order {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #efefef;
+  }
+  &__total-price {
+    margin-top: 32px;
+    padding-top: 18px;
+    border-top: 1px solid #efefef;
+  }
 }

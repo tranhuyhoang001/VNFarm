@@ -1,3 +1,82 @@
+:root {
+  --color-primary: #7fb640;
+  --text-primary: #333949;
+  --jade-green-color: #249371;
+  --turquoise-color: #00cc9b;
+  --purple-color: #8c2285;
+  --green-color: #598f1b;
+  --green-bold: #289b15;
+  --gold-color: #c09515;
+  --blue-color: #0e78a5;
+  --black-color: #000000;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.btn-small {
+  padding: 8px 14px;
+}
+
+.btn {
+  padding: 11px 24px;
+  border-radius: 32px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+}
+
+.btn-primary {
+  background-color: #7fb640;
+}
+
+.btn-turquoise {
+  background-color: #00cc9b;
+}
+
+.btn-gold {
+  background-color: #a69605;
+}
+
+.btn-brown {
+  background-color: #a7330a;
+}
+
+.btn-blue {
+  background-color: #107b8c;
+}
+
+.btn-category {
+  display: inline-block;
+  padding: 11px 24px;
+  border-radius: 32px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-gray {
+  background: #f1f1f1;
+  color: #333949;
+}
+
 .text-primary {
   color: #7fb640 !important;
 }
@@ -30,6 +109,10 @@
   margin-left: 24px !important;
 }
 
+.mt-20 {
+  margin-top: 20px !important;
+}
+
 .mt-24 {
   margin-top: 24px !important;
 }
@@ -56,6 +139,10 @@
 
 .mr-12 {
   margin-right: 12px !important;
+}
+
+.mt-8 {
+  margin-top: 8px !important;
 }
 
 .mt-16 {
@@ -98,7 +185,52 @@
   font-weight: 700;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+input[type='text']:focus,
+input[type='password']:focus,
 textarea:focus,
-input:focus {
+select:focus {
   outline: 1px solid #7fb640;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  background: #d2e2ad;
+  height: 8px;
+}
+
+input[type='range']::-moz-range-track {
+  background: #d2e2ad;
+  height: 8px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -12px;
+  background-color: #7fb640;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+input[type='range']::-moz-range-thumb {
+  border: none;
+  border-radius: 50%;
+  background-color: #7fb640;
+  width: 30px;
+  height: 30px;
 }

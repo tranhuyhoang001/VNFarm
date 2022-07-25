@@ -10,14 +10,14 @@
 
 .list-category::-webkit-scrollbar-track {
   background-color: transparent;
-  border-radius: 100px;
+  border-radius: 9999px;
 }
 
 .list-category::-webkit-scrollbar-thumb {
-  border-radius: 100px;
-  border: 6px solid transparent;
+  border-radius: 9999px;
+  border: 5px solid transparent;
   background-clip: content-box;
-  background-color: #d5c2c2;
+  background-color: #f1f1f1;
 }
 
 .btn-category:not(:first-child) {
