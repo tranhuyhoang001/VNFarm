@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="s-none">
       <div class="header-banner">
         <div class="header-banner__container">
           <img src="./assets/img/header-banner.svg" alt="Header Banner" class="header-banner__img" />
@@ -79,24 +79,47 @@
         </div>
       </div>
     </header>
-    <div class="grid wide">
+    <div class="grid wide s-px-20">
       <!-- Featured Image -->
-      <div class="row mt-24">
+      <div class="row mt-24 s-none">
         <div class="col l-3">
-          <div class="featured-img-1">1</div>
+          <div class="featured-img-1">
+            <span class="featured-img-1__tag">Sản phẩm mới</span>
+            <div class="featured-img-1__info">
+              <div class="featured-img-1__category">Loại sản phẩm</div>
+              <div class="featured-img-1__name">BS04 - TRIZON</div>
+              <div class="featured-img-1__price">152.000 VNĐ</div>
+            </div>
+            <img src="./assets/img/featured-img-1.png" alt="" class="featured-img-1__img" />
+            <span class="featured-img-1__btn btn btn-primary">Chi tiết</span>
+          </div>
         </div>
         <div class="col l-6">
-          <div class="featured-img-2">2</div>
+          <div class="featured-img-2">
+            <img src="./assets/img/featured-img-2.jpg" alt="" class="featured-img-2__img" />
+            <span class="featured-img-2__btn btn btn-primary">Mua ngay</span>
+          </div>
         </div>
         <div class="col l-3 featured-img-34">
-          <div class="featured-img-3">c</div>
-          <div class="featured-img-4">d</div>
+          <div class="featured-img-3">
+            <img src="./assets/img/featured-img-3.png" alt="" class="featured-img-3__img" />
+            <div class="featured-img-3__time">Từ ngày 10-20.2</div>
+            <div class="featured-img-3__discount">Giảm giá 20%</div>
+            <span class="featured-img-3__btn btn btn-gold">Mua ngay</span>
+          </div>
+          <div class="featured-img-4">
+            <img src="./assets/img/featured-img-4.png" alt="" class="featured-img-4__img" />
+            <div class="featured-img-4__name">BS04 - TRIZON</div>
+            <div class="featured-img-4__time">Từ ngày 10-20.2</div>
+            <div class="featured-img-4__discount">Giảm giá 20%</div>
+            <span class="featured-img-4__btn btn btn-brown">Mua ngay</span>
+          </div>
         </div>
       </div>
 
       <!-- Featured Icon -->
       <div class="row featured">
-        <div class="col l-3">
+        <div class="col l-3 c-12">
           <div class="featured__container">
             <img src="./assets/icon/free-delivery.svg" alt="" class="featured__icon" />
             <div class="featured__content">
@@ -105,7 +128,7 @@
             </div>
           </div>
         </div>
-        <div class="col l-3">
+        <div class="col l-3 c-12 s-mt-24">
           <div class="featured__container">
             <img src="./assets/icon/easy-returns.svg" alt="" class="featured__icon" />
             <div class="featured__content">
@@ -114,7 +137,7 @@
             </div>
           </div>
         </div>
-        <div class="col l-3">
+        <div class="col l-3 c-12 s-mt-24">
           <div class="featured__container">
             <img src="./assets/icon/safe.svg" alt="" class="featured__icon" />
             <div class="featured__content">
@@ -123,7 +146,7 @@
             </div>
           </div>
         </div>
-        <div class="col l-3">
+        <div class="col l-3 c-12 s-mt-24">
           <div class="featured__container">
             <img src="./assets/icon/organic-farming.svg" alt="" class="featured__icon" />
             <div class="featured__content">
@@ -143,7 +166,7 @@
           <h2 class="homepage-heading__text">Danh mục sản phẩm <span class="homepage-heading__decorate"></span></h2>
         </div>
         <div class="row product-portfolio__list-box">
-          <div class="col l-2-4">
+          <div class="col l-2-4 c-6">
             <div class="product-portfolio__box box-jade-green">
               <h3 class="product-portfolio__title">Thuốc trừ bệnh<br />sinh học</h3>
               <p class="product-portfolio__amount">20 sản phẩm</p>
@@ -154,7 +177,7 @@
               />
             </div>
           </div>
-          <div class="col l-2-4">
+          <div class="col l-2-4 c-6">
             <div class="product-portfolio__box box-purple">
               <h3 class="product-portfolio__title">Thuốc trừ sâu<br />sinh học</h3>
               <p class="product-portfolio__amount">20 sản phẩm</p>
@@ -165,21 +188,21 @@
               />
             </div>
           </div>
-          <div class="col l-2-4">
+          <div class="col l-2-4 c-6 s-mt-111">
             <div class="product-portfolio__box box-green">
               <h3 class="product-portfolio__title">Dinh dưỡng<br />cho cây</h3>
               <p class="product-portfolio__amount">20 sản phẩm</p>
               <img src="./assets/img/dinh-duong-cho-cay.svg" alt="Dinh dưỡng cho cây" class="product-portfolio__img" />
             </div>
           </div>
-          <div class="col l-2-4">
+          <div class="col l-2-4 c-6 s-mt-111">
             <div class="product-portfolio__box box-gold">
               <h3 class="product-portfolio__title">Hỗ trợ nông nghiệp</h3>
               <p class="product-portfolio__amount">20 sản phẩm</p>
               <img src="./assets/img/ho-tro-nong-nghiep.svg" alt="Hỗ trợ nông nghiệp" class="product-portfolio__img" />
             </div>
           </div>
-          <div class="col l-2-4">
+          <div class="col l-2-4 c-12 s-mt-111">
             <div class="product-portfolio__box box-blue">
               <h3 class="product-portfolio__title">Phòng trừ tuyến trùng</h3>
               <p class="product-portfolio__amount">20 sản phẩm</p>
@@ -193,25 +216,25 @@
         </div>
         <div class="recommend-large">
           <div class="row">
-            <div class="col l-6">
+            <div class="col l-6 c-12">
               <img src="./assets/img/physa.png" alt="Physa" class="recommend-large__img" />
             </div>
-            <div class="col l-6">
+            <div class="col l-6 c-12">
               <p class="recommend-large__text">Gợi ý cho bạn</p>
               <h3 class="recommend-large__product">BS04 - <span class="text-primary">TRIZON</span></h3>
               <p class="recommend-large__product-desc">
                 The liber tempor cum soluta nobis eleifend option congue doming quod mazim placerat facer possim assum.
               </p>
               <div class="row">
-                <div class="col l-6 pr-24">
+                <div class="col l-6 pr-24 c-12">
                   <h4 class="recommend-large__product-element">Thành Phần</h4>
                   <p class="recommend-large__product-element-desc">Chaetomium cupreum… 1.5CFU/g</p>
                   <span class="btn btn-primary recommend-large__product-btn">xem chi tiết</span>
                 </div>
-                <div class="col l-6">
+                <div class="col l-6 c-12">
                   <h4 class="recommend-large__product-uses">Công dụng</h4>
                   <p class="recommend-large__product-uses-desc">Đặc trị đạo ôn, bệnh do nấm và vi khuẩn gây ra</p>
-                  <span class="btn btn-blue recommend-large__product-btn">Thêm vào giỏ hàng</span>
+                  <span class="btn btn-blue recommend-large__product-btn s-none">Thêm vào giỏ hàng</span>
                 </div>
               </div>
             </div>
@@ -219,14 +242,14 @@
         </div>
 
         <!-- Small Banner -->
-        <div class="row mt-40">
-          <div class="col l-4">
+        <div class="row mt-40 s-mt-16">
+          <div class="col l-4 s-none">
             <img src="./assets/img/banner/advertisement-1.png" alt="Advertisement" />
           </div>
-          <div class="col l-4">
-            <img src="./assets/img/banner/advertisement-2.png" alt="Advertisement" />
+          <div class="col l-4 c-12">
+            <img src="./assets/img/banner/advertisement-2.png" alt="Advertisement" class="s-w-full" />
           </div>
-          <div class="col l-4">
+          <div class="col l-4 s-none">
             <img src="./assets/img/banner/advertisement-3.png" alt="Advertisement" />
           </div>
         </div>
@@ -251,7 +274,7 @@
 
       <!-- Product List -->
       <div class="row">
-        <div class="col l-3">
+        <div class="col l-3 c-6">
           <div class="product-box">
             <span class="product-box__discount">-15%</span>
             <svg
@@ -278,7 +301,7 @@
             <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
           </div>
         </div>
-        <div class="col l-3">
+        <div class="col l-3 c-6">
           <div class="product-box">
             <span class="product-box__discount">-15%</span>
             <svg
@@ -305,7 +328,7 @@
             <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
           </div>
         </div>
-        <div class="col l-3">
+        <div class="col l-3 c-6 s-mt-16">
           <div class="product-box">
             <span class="product-box__discount">-15%</span>
             <svg
@@ -332,7 +355,7 @@
             <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
           </div>
         </div>
-        <div class="col l-3">
+        <div class="col l-3 c-6 s-mt-16">
           <div class="product-box">
             <span class="product-box__discount">-15%</span>
             <svg
@@ -361,8 +384,8 @@
         </div>
       </div>
 
-      <div class="row mt-40">
-        <div class="col l-3">
+      <div class="row mt-40 s-mt-16">
+        <div class="col l-3 c-6">
           <div class="product-box">
             <span class="product-box__discount">-15%</span>
             <svg
@@ -389,7 +412,7 @@
             <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
           </div>
         </div>
-        <div class="col l-3">
+        <div class="col l-3 c-6">
           <div class="product-box">
             <span class="product-box__discount">-15%</span>
             <svg
@@ -416,7 +439,7 @@
             <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
           </div>
         </div>
-        <div class="col l-3">
+        <div class="col l-3 c-6 s-mt-16">
           <div class="product-box">
             <span class="product-box__discount">-15%</span>
             <svg
@@ -443,7 +466,7 @@
             <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
           </div>
         </div>
-        <div class="col l-3">
+        <div class="col l-3 c-6 s-mt-16">
           <div class="product-box">
             <span class="product-box__discount">-15%</span>
             <svg
@@ -477,10 +500,10 @@
         <span class="brand-name__text">VNFARM <span class="brand-name__decorate"></span></span>
       </div>
       <div class="homepage-heading">
-        <h2 class="homepage-heading__text">Sản phẩm của chúng tôi<span class="homepage-heading__decorate"></span></h2>
+        <h2 class="homepage-heading__text">Giới thiệu về chúng tôi<span class="homepage-heading__decorate"></span></h2>
       </div>
       <div class="row mt-62">
-        <div class="col l-3">
+        <div class="col l-3 c-12">
           <div class="about-us__banner-1">
             <div class="about-us__content-on-bottom">
               <p class="about-us__title">Chúng tôi là ai?</p>
@@ -491,7 +514,7 @@
             </div>
           </div>
         </div>
-        <div class="col l-3">
+        <div class="col l-3 c-12 s-mt-24">
           <div class="about-us__banner-2">
             <div class="about-us__content-on-top">
               <p class="about-us__title">Bảo vệ môi trường</p>
@@ -502,7 +525,7 @@
             </div>
           </div>
         </div>
-        <div class="col l-3">
+        <div class="col l-3 c-12 s-mt-24">
           <div class="about-us__banner-3">
             <div class="about-us__content-on-bottom">
               <p class="about-us__title">Đội ngũ chuyên gia</p>
@@ -513,7 +536,7 @@
             </div>
           </div>
         </div>
-        <div class="col l-3">
+        <div class="col l-3 c-12 s-mt-24">
           <div class="about-us__banner-4">
             <div class="about-us__content-on-top">
               <p class="about-us__title">Công nghệ sản xuất đạt chuẩn<br />ISO 9001:2015</p>
@@ -537,19 +560,19 @@
         <span class="btn btn-primary">Xem thêm</span>
       </div>
       <div class="row">
-        <div class="col l-3 qa-img-12">
+        <div class="col l-3 qa-img-12 c-12">
           <div class="qa-img">
-            <img src="./assets/img/qa-img-1.png" alt="" class="qa-img" />
+            <img src="./assets/img/qa-img-1.png" alt="" class="qa-img s-w-full" />
             <p class="qa-img__title">Bạn đã biết những cách tận dụng thùng xốp trồng rau này chưa?</p>
           </div>
           <div class="qa-img">
-            <img src="./assets/img/qa-img-2.png" alt="" class="qa-img" />
+            <img src="./assets/img/qa-img-2.png" alt="" class="qa-img s-w-full s-mt-24" />
             <p class="qa-img__title">Bạn đã biết những cách tận dụng thùng xốp trồng rau này chưa?</p>
           </div>
         </div>
-        <div class="col l-6">
+        <div class="col l-6 c-12">
           <div class="qa-img">
-            <img src="./assets/img/qa-img-3.png" alt="" class="qa-img" />
+            <img src="./assets/img/qa-img-3.png" alt="" class="qa-img s-w-full s-mt-24" />
             <div class="qa-img__content">
               <p class="qa-img__heading">Sản phẩm chất lượng</p>
               <p class="qa-img__desc">
@@ -559,13 +582,13 @@
             </div>
           </div>
         </div>
-        <div class="col l-3 qa-img-45">
+        <div class="col l-3 qa-img-45 c-12">
           <div class="qa-img">
-            <img src="./assets/img/qa-img-4.png" alt="" class="qa-img" />
+            <img src="./assets/img/qa-img-4.png" alt="" class="qa-img s-w-full s-mt-24" />
             <p class="qa-img__title">Bạn đã biết những cách tận dụng thùng xốp trồng rau này chưa?</p>
           </div>
           <div class="qa-img">
-            <img src="./assets/img/qa-img-5.png" alt="" class="qa-img" />
+            <img src="./assets/img/qa-img-5.png" alt="" class="qa-img s-w-full s-mt-24" />
             <p class="qa-img__title">Bạn đã biết những cách tận dụng thùng xốp trồng rau này chưa?</p>
           </div>
         </div>
@@ -599,31 +622,18 @@
         VNfarm? Gửi yêu cầu đăng kí làm đại lý cho chúng tôi ngay để được liên hệ và tư vấn.
       </div>
       <div class="register-agent-btn">
-        <span id="registerAgentBtn" class="btn btn-primary">Đăng ký làm đại lý</span>
+        <span id="registerAgentBtn" class="btn btn-primary s-text-16">Đăng ký làm đại lý</span>
       </div>
       <!-- end -->
     </div>
 
     <!-- footer component -->
     <footer>
-      <div class="grid wide">
+      <div class="grid wide s-px-20">
         <div class="row footer__list-title">
-          <div class="col l-3-6">
+          <div class="col l-3-6 c-12">
             <!-- <h4 class="footer-title">abc</h4> -->
             <img src="./assets/img/logo.svg" alt="Logo" />
-          </div>
-          <div class="col l-2-4">
-            <h4 class="footer__title">Thông tin chính sách</h4>
-          </div>
-          <div class="col l-2-4">
-            <h4 class="footer__title">Khám phá VNFarm</h4>
-          </div>
-          <div class="col l-3-6">
-            <h4 class="footer__big-title">Chúng tôi lắng nghe bạn</h4>
-          </div>
-        </div>
-        <div class="row footer__content">
-          <div class="col l-3-6">
             <ul class="footer__col-1">
               <li><img src="./assets/icon/building.svg" alt="" /> CÔNG TY CỔ PHẦN NÔNG NGHIỆP VNFARM</li>
               <li>
@@ -634,7 +644,8 @@
               <li><img src="./assets/icon/envelope.svg" alt="" />Admin@vnfarm.com.vn</li>
             </ul>
           </div>
-          <div class="col l-2-4">
+          <div class="col l-2-4 c-12 s-mt-24">
+            <h4 class="footer__title">Thông tin chính sách</h4>
             <ul class="footer__col-2">
               <li>Quy chế hoạt động</li>
               <li>Quy chế hoạt động</li>
@@ -642,7 +653,8 @@
               <li>Quy chế hoạt động</li>
             </ul>
           </div>
-          <div class="col l-2-4">
+          <div class="col l-2-4 c-12 s-mt-24">
+            <h4 class="footer__title">Khám phá VNFarm</h4>
             <ul class="footer__col-3">
               <li>Sản phẩm</li>
               <li>Hỏi đáp</li>
@@ -650,23 +662,22 @@
               <li>Hỗ trợ</li>
             </ul>
           </div>
-          <div class="col l-3-6">
-            <!-- <div class="footer__col-4"> -->
+          <div class="col l-3-6 c-12 s-mt-24">
+            <h4 class="footer__big-title">Chúng tôi lắng nghe bạn</h4>
             <p class="footer__listen-to-you">
               Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể nâng cấp trải
               nghiệm dịch vụ và sản phẩm tốt hơn nữa.
             </p>
             <span class="btn btn-primary footer__btn">Gửi ý kiến</span>
-            <div class="footer__list-social">
+            <div class="footer__list-social s-none">
               Theo dõi chúng tôi
               <img src="./assets/icon/youtube.png" alt="Youtube" class="footer__social-logo" />
               <img src="./assets/icon/facebook.png" alt="Facebook" class="footer__social-logo" />
               <img src="./assets/icon/tiktok.png" alt="Tiktok" class="footer__social-logo" />
             </div>
-            <!-- </div> -->
           </div>
         </div>
-        <div class="footer__copyright">
+        <div class="footer__copyright s-none">
           <div class="">© 2022 VNFarm. All rights reserved.</div>
           <div class="footer__support">
             <div class="row">
@@ -693,12 +704,44 @@
           <div class=""><img src="./assets/img/bo-cong-thuong.png" alt="Đã thông báo Bộ Công Thương" /></div>
           <div class=""><img src="./assets/img/dmca.png" alt="DMCA Logo" /></div>
         </div>
+        <div class="footer-mobile l-none s-block">
+          <div class="row">
+            <div class="col c-6"><img src="./assets/img/bo-cong-thuong.png" alt="" /></div>
+            <div class="col c-6"><img src="./assets/img/dmca.png" alt="" /></div>
+          </div>
+          <div class="footer-mobile__payment">Cổng thanh toán được bảo đảm</div>
+          <img src="./assets/img/payment-logo.png" alt="" />
+          <div class="row">
+            <div class="col c-6 footer-mobile__call">
+              <object data="./assets/icon/phone-call.svg" width="28"></object>
+              <div class="footer-mobile__call-info">
+                <div class="footer-mobile__number">0342331997</div>
+                <div class="footer-mobile__working-time">Làm việc từ 8:00 - 22:00</div>
+              </div>
+            </div>
+            <div class="col c-6 footer-mobile__call">
+              <object data="./assets/icon/phone-call.svg" width="28"></object>
+              <div class="footer-mobile__call-info">
+                <div class="footer-mobile__number">0342331997</div>
+                <div class="footer-mobile__working-time">Trung tâm hỗ trợ 24/7</div>
+              </div>
+            </div>
+            <div class="footer-mobile__follow-us">
+              Theo dõi chúng tôi
+              <div class="footer-mobile__list-follow-icon">
+                <img src="./assets/icon/youtube.png" alt="" class="footer-mobile__follow-icon" />
+                <img src="./assets/icon/facebook.png" alt="" class="footer-mobile__follow-icon" />
+                <img src="./assets/icon/tiktok.png" alt="" class="footer-mobile__follow-icon" />
+              </div>
+            </div>
+            <div class="footer-mobile__copyright-text">© 2022 VNFarm. All rights reserved.</div>
+          </div>
+        </div>
       </div>
     </footer>
 
     <!-- Login Modal component -->
     <div id="loginModal" class="modal">
-      <!-- Login Modal content -->
       <div class="login-box">
         <span class="login-box__close-btn">&times;</span>
         <img src="./assets/img/logo.svg" alt="Logo" class="login-box__logo" />
@@ -820,7 +863,6 @@
 
     <!-- Register Agent Modal component -->
     <div id="registerAgentModal" class="modal">
-      <!-- Register Agent Modal content -->
       <div class="register-agent__box">
         <span class="register-agent__close-btn">&times;</span>
         <img src="./assets/img/logo.svg" alt="Logo" class="register-agent__logo" />
