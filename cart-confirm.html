@@ -168,21 +168,21 @@
               <div class="col l-6">
                 <label for="province" class="cart-confirm__input-label">Thành phố</label>
                 <select id="province" name="province" class="cart-confirm__select">
-                  <option value="hn">Hà Nội</option>
-                  <option value="tphcm">TP Hồ Chí Minh</option>
-                  <option value="dn">Đà Nẵng</option>
-                  <option value="nt">Nha Trang</option>
-                  <option value="th">Thanh Hoá</option>
+                  <option class="cart-confirm__select-option" value="hn">Hà Nội</option>
+                  <option class="cart-confirm__select-option" value="tphcm">TP Hồ Chí Minh</option>
+                  <option class="cart-confirm__select-option" value="dn">Đà Nẵng</option>
+                  <option class="cart-confirm__select-option" value="nt">Nha Trang</option>
+                  <option class="cart-confirm__select-option" value="th">Thanh Hoá</option>
                 </select>
               </div>
               <div class="col l-6">
                 <label for="district" class="cart-confirm__input-label">Quận/Huyện</label>
                 <select id="district" name="district" class="cart-confirm__select">
-                  <option value="hk">Hoàn Kiếm</option>
-                  <option value="dd">Đống Đa</option>
-                  <option value="bd">Ba Đình</option>
-                  <option value="hbt">Hai Bà Trưng</option>
-                  <option value="hm">Hoàng Mai</option>
+                  <option class="cart-confirm__select-option" value="hk">Hoàn Kiếm</option>
+                  <option class="cart-confirm__select-option" value="dd">Đống Đa</option>
+                  <option class="cart-confirm__select-option" value="bd">Ba Đình</option>
+                  <option class="cart-confirm__select-option" value="hbt">Hai Bà Trưng</option>
+                  <option class="cart-confirm__select-option" value="hm">Hoàng Mai</option>
                 </select>
               </div>
             </div>
@@ -190,11 +190,11 @@
               <div class="col l-6">
                 <label for="commune" class="cart-confirm__input-label">Phường xã</label>
                 <select id="commune" name="commune" class="cart-confirm__select">
-                  <option value="nd">Nguyễn Du</option>
-                  <option value="ldh">Lê Đại Hành</option>
-                  <option value="btx">Bùi Thị Xuân</option>
-                  <option value="ph">Phố Huế</option>
-                  <option value="ntn">Ngô Thì Nhậm</option>
+                  <option class="cart-confirm__select-option" value="nd">Nguyễn Du</option>
+                  <option class="cart-confirm__select-option" value="ldh">Lê Đại Hành</option>
+                  <option class="cart-confirm__select-option" value="btx">Bùi Thị Xuân</option>
+                  <option class="cart-confirm__select-option" value="ph">Phố Huế</option>
+                  <option class="cart-confirm__select-option" value="ntn">Ngô Thì Nhậm</option>
                 </select>
               </div>
               <div class="col l-6">
@@ -220,21 +220,64 @@
                 />
               </div>
             </div>
-
-            <h3 class="cart-confirm__title">1 .Thông tin giao hàng</h3>
+          </div>
+          <h3 class="cart-confirm__title">3 .Hình thức thanh toán</h3>
+          <div class="cart-confirm__payment-list">
+            <div class="cart-confirm__payment-box cart-confirm__payment-selected">
+              <input type="radio" id="cod" name="payment" value="cod" class="cart-confirm__payment-radio" checked />
+              <div class="cart-confirm__payment-img">COD</div>
+              <div class="cart-confirm__payment-text">
+                <p class="cart-confirm__payment-tile">Hướng dẫn thanh toán COD</p>
+                <p class="cart-confirm__payment-desc">Thanh toán bằng tiền mặt khi bạn nhận được sản phẩm</p>
+              </div>
+            </div>
+            <div class="cart-confirm__payment-box">
+              <input type="radio" id="momo" name="payment" value="momo" class="cart-confirm__payment-radio" />
+              <img src="./assets/img/media-logo/momo.png" alt="Momo" class="cart-confirm__payment-img" />
+              <div class="cart-confirm__payment-text">
+                <p class="cart-confirm__payment-tile">Hướng dẫn thanh toán MOMO</p>
+                <p class="cart-confirm__payment-desc">
+                  Bạn chọn thanh toán bằng Momo sau đó hãy quét mã QR trên Momo để thanh toán nhé
+                </p>
+              </div>
+            </div>
+            <div class="cart-confirm__payment-box">
+              <input type="radio" id="zalopay" name="payment" value="zalopay" class="cart-confirm__payment-radio" />
+              <img src="./assets/img/media-logo/zalopay.png" alt="Zalopay" class="cart-confirm__payment-img" />
+              <div class="cart-confirm__payment-text">
+                <p class="cart-confirm__payment-tile">Hướng dẫn thanh toán Zalopay</p>
+                <p class="cart-confirm__payment-desc">
+                  Bạn chọn thanh toán bằng Zalopay sau đó hãy quét mã QR trên Zalopay để thanh toán nhé
+                </p>
+              </div>
+            </div>
           </div>
         </div>
         <div class="col l-4">
           <div class="cart__summary-box">
-            <h3 class="cart__summary-heading">Tóm tắt sản phẩm</h3>
+            <h3 class="cart__summary-heading">Đơn hàng</h3>
+            <div class="cart__summary-order">
+              <div class="cart__summary-item">
+                <img src="./assets/img/0001575_physa_500.png" alt="Physa" width="52px" />
+                <div class="mr-12">
+                  <p class="fs-12">Thuốc trừ sâu sinh học</p>
+                  <p class="font-bold mt-8">BS04 - TRIZON</p>
+                </div>
+                <span class="font-bold text-primary">300.000VNĐ</span>
+              </div>
+              <div class="cart__summary-item">
+                <img src="./assets/img/0001575_physa_500.png" alt="Physa" width="52px" />
+                <div class="mr-12">
+                  <p class="fs-12">Thuốc trừ sâu sinh học</p>
+                  <p class="font-bold mt-8">BS04 - TRIZON</p>
+                </div>
+                <span class="font-bold text-primary">300.000VNĐ</span>
+              </div>
+            </div>
             <div class="cart__summary-item">Giá tiền ( số sản phẩm )<span class="font-bold">900.000VNĐ</span></div>
             <div class="cart__summary-item">Phí vận chuyển<span class="font-bold">20.000VNĐ</span></div>
             <div class="cart__summary-item">Giảm giá<span class="font-bold">-100.000VNĐ</span></div>
-            <div class="cart__summary-item">
-              <input type="text" placeholder="Nhập mã giảm giá" class="cart__discount-input" />
-              <span class="cart__discount-btn">Áp Dụng</span>
-            </div>
-            <div class="cart__summary-item mt-62">Tổng tiền<span class="font-bold">920.000 VNĐ</span></div>
+            <div class="cart__summary-item cart__total-price">Tổng tiền<span class="font-bold">920.000 VNĐ</span></div>
             <div class="btn btn-primary text-center mt-24">Xác nhận thanh toán</div>
           </div>
         </div>

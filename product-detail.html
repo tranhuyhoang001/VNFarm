@@ -40,7 +40,7 @@
             <img src="./assets/icon/cart.svg" alt="" class="" />
             <span class="header-amount header-cart-amount">2</span>
           </div>
-          <a href="#" class="ml-24">Đăng nhập</a>
+          <a id="loginBtn" class="header-login-btn">Đăng nhập</a>
           <img src="./assets/icon/user-circle.svg" alt="" class="ml-10" />
         </div>
       </div>
@@ -49,7 +49,7 @@
         <div class="grid wide header-navbar__content">
           <div>
             <div class="header-navbar__btn">
-              <img src="./assets/icon/bar.svg" class="mr-6" />
+              <img src="./assets/icon/bar.svg" />
               Danh mục sản phẩm
               <img src="./assets/icon/caret-down.svg" />
               <div class="header-navbar__dropdown">
@@ -145,12 +145,18 @@
                 canh tác hữu cơ sinh học, mang lại nguồn nông sản an toàn đạt tiêu chuẩn xuất khẩu.
               </li>
             </ul>
-            <p class="product-detail__text-bold">Dung tích: 250ml.</p>
+            <p class="product-detail__text-bold">
+              Dung tích:
+              <span class="product-detail__capacity product-detail__capacity-selected">200ml</span>
+              <span class="product-detail__capacity">500ml</span>
+            </p>
             <fieldset class="product-detail__promotion">
-              <legend class="product-detail__promotion-title">Khuyễn mãi đặc biệt</legend>
-              <p class="product-detail__promotion-text">> Free shop</p>
-              <p class="product-detail__promotion-text">> Free shop</p>
-              <p class="product-detail__promotion-text">> Free shop</p>
+              <legend class="product-detail__promotion-title">Đặc điểm nổi bật</legend>
+              <p class="product-detail__promotion-text">> Miễn phí giao hàng cho đơn hàng từ 300k</p>
+              <p class="product-detail__promotion-text">> Giao nhanh trong 2 giờ đối với Hà Nội và TP. Hồ Chí Minh</p>
+              <p class="product-detail__promotion-text">
+                > Cam kết chính hãng, nói không với hàng giả, hàng nhái, hàng kém chất lượng
+              </p>
             </fieldset>
             <div class="product-detail__amount">
               <span class="product-detail__amount-title">Số lượng:</span>
@@ -473,7 +479,7 @@
 
         <div class="product-detail__review-box-title">
           <h3 class="product-detail__review-box-heading">Bình luận của người dùng</h3>
-          <span class="product-detail__review-box-btn">Viết đánh giá</span>
+          <span id="writeReviewBtn" class="product-detail__review-box-btn">Viết đánh giá</span>
         </div>
         <div class="product-detail__cmt-box">
           <p class="product-detail__cmt-name">Lê Văn A</p>
@@ -1015,5 +1021,85 @@
         </div>
       </div>
     </footer>
+
+    <!-- Write Review Modal component -->
+    <div id="writeReviewModal" class="modal">
+      <div class="write-review__box">
+        <span class="write-review__close-btn">&times;</span>
+        <div class="write-review__header">Đánh giá sản phẩm</div>
+        <div class="write-review__product">
+          <img src="./assets/img/BS04 - TRIZON.png" alt="" class="write-review__img" />
+          <div class="write-review__product-info">
+            <div class="write-review__product-category">Thuốc trừ sâu sinh học</div>
+            <div class="write-review__product-name">BS04 - TRIZON</div>
+          </div>
+        </div>
+        <div class="write-review__rating">
+          <svg width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M25 0L30.8374 17.9656H49.7275L34.4451 29.0689L40.2824 47.0344L25 35.9311L9.71758 47.0344L15.5549 29.0689L0.272532 17.9656H19.1626L25 0Z"
+              fill="#F9B402"
+            />
+          </svg>
+          <svg width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M25 0L30.8374 17.9656H49.7275L34.4451 29.0689L40.2824 47.0344L25 35.9311L9.71758 47.0344L15.5549 29.0689L0.272532 17.9656H19.1626L25 0Z"
+              fill="#F9B402"
+            />
+          </svg>
+          <svg width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M25 0L30.8374 17.9656H49.7275L34.4451 29.0689L40.2824 47.0344L25 35.9311L9.71758 47.0344L15.5549 29.0689L0.272532 17.9656H19.1626L25 0Z"
+              fill="#F9B402"
+            />
+          </svg>
+          <svg width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M25 0L30.8374 17.9656H49.7275L34.4451 29.0689L40.2824 47.0344L25 35.9311L9.71758 47.0344L15.5549 29.0689L0.272532 17.9656H19.1626L25 0Z"
+              fill="#F9B402"
+            />
+          </svg>
+          <svg width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M25 0L30.8374 17.9656H49.7275L34.4451 29.0689L40.2824 47.0344L25 35.9311L9.71758 47.0344L15.5549 29.0689L0.272532 17.9656H19.1626L25 0Z"
+              fill="#F9B402"
+            />
+          </svg>
+        </div>
+        <div class="write-review__list-action">
+          <div class="write-review__bad">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              class="write-review__bad-icon"
+            >
+              <path
+                d="M9.99 0C4.47 0 0 4.48 0 10C0 15.52 4.47 20 9.99 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 9.99 0ZM10 18C5.58 18 2 14.42 2 10C2 5.58 5.58 2 10 2C14.42 2 18 5.58 18 10C18 14.42 14.42 18 10 18ZM13.5 9C14.33 9 15 8.33 15 7.5C15 6.67 14.33 6 13.5 6C12.67 6 12 6.67 12 7.5C12 8.33 12.67 9 13.5 9ZM6.5 9C7.33 9 8 8.33 8 7.5C8 6.67 7.33 6 6.5 6C5.67 6 5 6.67 5 7.5C5 8.33 5.67 9 6.5 9ZM10 11.5C7.67 11.5 5.69 12.96 4.89 15H15.11C14.31 12.96 12.33 11.5 10 11.5Z"
+              />
+            </svg>
+            Không hài lòng
+          </div>
+          <div class="write-review__good write-review__selected">
+            Hài lòng
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              class="write-review__good-icon"
+            >
+              <path
+                d="M9.99 0C4.47 0 0 4.48 0 10C0 15.52 4.47 20 9.99 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 9.99 0ZM10 18C5.58 18 2 14.42 2 10C2 5.58 5.58 2 10 2C14.42 2 18 5.58 18 10C18 14.42 14.42 18 10 18ZM13.5 9C14.33 9 15 8.33 15 7.5C15 6.67 14.33 6 13.5 6C12.67 6 12 6.67 12 7.5C12 8.33 12.67 9 13.5 9ZM6.5 9C7.33 9 8 8.33 8 7.5C8 6.67 7.33 6 6.5 6C5.67 6 5 6.67 5 7.5C5 8.33 5.67 9 6.5 9ZM10 11.5C7.67 11.5 5.69 12.96 4.89 15H15.11C14.31 12.96 12.33 11.5 10 11.5Z"
+              />
+            </svg>
+          </div>
+        </div>
+        <textarea rows="8" cols="50" placeholder="Đánh giá sản phẩm" class="write-review__text-area"></textarea>
+        <div class="write-review__btn">Gửi đánh giá</div>
+      </div>
+    </div>
+    <script src="./assets/js/product-detail.js"></script>
   </body>
 </html>

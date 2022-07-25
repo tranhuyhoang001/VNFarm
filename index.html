@@ -40,7 +40,7 @@
             <img src="./assets/icon/cart.svg" alt="" class="" />
             <span class="header-amount header-cart-amount">2</span>
           </div>
-          <a href="#" class="ml-24">Đăng nhập</a>
+          <a id="loginBtn" class="header-login-btn">Đăng nhập</a>
           <img src="./assets/icon/user-circle.svg" alt="" class="ml-10" />
         </div>
       </div>
@@ -49,7 +49,7 @@
         <div class="grid wide header-navbar__content">
           <div>
             <div class="header-navbar__btn">
-              <img src="./assets/icon/bar.svg" class="mr-6" />
+              <img src="./assets/icon/bar.svg" />
               Danh mục sản phẩm
               <img src="./assets/icon/caret-down.svg" />
               <div class="header-navbar__dropdown">
@@ -586,12 +586,29 @@
         <img src="./assets/img/media-logo/techcombank.png" alt="Techcombank" class="list-media__logo" />
         <img src="./assets/img/media-logo/24h.png" alt="24h" class="list-media__logo" />
       </div>
+
+      <!-- Media talk about us -->
+      <div class="brand-name mt-40">
+        <span class="brand-name__text">VNFARM <span class="brand-name__decorate"></span></span>
+      </div>
+      <div class="homepage-heading">
+        <h2 class="homepage-heading__text">Đăng ký làm đại lý<span class="homepage-heading__decorate"></span></h2>
+      </div>
+      <div class="register-agent">
+        Bạn đang hoạt động trong lĩnh vực nông nghiệp. Bạn muốn mở rộng mặt hàng kinh doanh và trở thành đại lý của
+        VNfarm? Gửi yêu cầu đăng kí làm đại lý cho chúng tôi ngay để được liên hệ và tư vấn.
+      </div>
+      <div class="register-agent-btn">
+        <span id="registerAgentBtn" class="btn btn-primary">Đăng ký làm đại lý</span>
+      </div>
       <!-- end -->
     </div>
+
+    <!-- footer component -->
     <footer>
       <div class="grid wide">
         <div class="row footer__list-title">
-          <div class="col l-3">
+          <div class="col l-3-6">
             <!-- <h4 class="footer-title">abc</h4> -->
             <img src="./assets/img/logo.svg" alt="Logo" />
           </div>
@@ -601,12 +618,12 @@
           <div class="col l-2-4">
             <h4 class="footer__title">Khám phá VNFarm</h4>
           </div>
-          <div class="col l-3">
+          <div class="col l-3-6">
             <h4 class="footer__big-title">Chúng tôi lắng nghe bạn</h4>
           </div>
         </div>
         <div class="row footer__content">
-          <div class="col l-3">
+          <div class="col l-3-6">
             <ul class="footer__col-1">
               <li><img src="./assets/icon/building.svg" alt="" /> CÔNG TY CỔ PHẦN NÔNG NGHIỆP VNFARM</li>
               <li>
@@ -633,7 +650,7 @@
               <li>Hỗ trợ</li>
             </ul>
           </div>
-          <div class="col l-3">
+          <div class="col l-3-6">
             <!-- <div class="footer__col-4"> -->
             <p class="footer__listen-to-you">
               Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể nâng cấp trải
@@ -678,5 +695,192 @@
         </div>
       </div>
     </footer>
+
+    <!-- Login Modal component -->
+    <div id="loginModal" class="modal">
+      <!-- Login Modal content -->
+      <div class="login-box">
+        <span class="login-box__close-btn">&times;</span>
+        <img src="./assets/img/logo.svg" alt="Logo" class="login-box__logo" />
+        <div class="login-box__list-tab">
+          <div class="login-box__tab active">Đăng nhập</div>
+          <div class="login-box__tab">Đăng ký</div>
+        </div>
+        <div class="login-box__tab-content active">
+          <div class="login-box__input-item">
+            <label for="login__acc" class="login-box__input-label"
+              >Tài khoản hoặc email <span style="color: red">*</span></label
+            >
+            <input
+              type="text"
+              id="login__acc"
+              name="login__acc"
+              class="login-box__input-text"
+              placeholder="Nhập tài khoàn hoặc email của bạn"
+            />
+          </div>
+          <div class="login-box__input-item">
+            <label for="login__password" class="login-box__input-label"
+              >Mật khẩu <span style="color: red">*</span></label
+            >
+            <input
+              type="password"
+              id="login__password"
+              name="login__password"
+              class="login-box__input-password"
+              placeholder="Nhập mật khẩu của bạn tại đây"
+            />
+          </div>
+          <div class="login-box__list-action">
+            <div class="login-box__save-password">
+              <input type="checkbox" class="login-box__checkbox" />Lưu mật khẩu
+            </div>
+            <div class="login-box__forgot-password">Quên mật khẩu ?</div>
+          </div>
+          <div class="login-box__btn">Đăng nhập</div>
+        </div>
+        <div class="login-box__tab-content">
+          <div class="login-box__input-item">
+            <label for="register__fname" class="login-box__input-label"
+              >Tên của bạn <span style="color: red">*</span></label
+            >
+            <input
+              type="text"
+              id="register__fname"
+              name="register__fname"
+              class="login-box__input-text"
+              placeholder="Nhập tên của bạn"
+            />
+          </div>
+          <div class="login-box__input-item">
+            <label for="register__acc" class="login-box__input-label"
+              >Tài khoản hoặc email <span style="color: red">*</span></label
+            >
+            <input
+              type="text"
+              id="register__acc"
+              name="register__acc"
+              class="login-box__input-text"
+              placeholder="Nhập tài khoàn hoặc email của bạn"
+            />
+          </div>
+          <div class="login-box__input-item">
+            <label for="register__phone" class="login-box__input-label"
+              >Sô điện thoại của bạn <span style="color: red">*</span></label
+            >
+            <input
+              type="text"
+              id="register__phone"
+              name="register__phone"
+              class="login-box__input-text"
+              placeholder="Nhập tài khoàn hoặc email của bạn"
+            />
+          </div>
+          <div class="login-box__input-item">
+            <label for="register__password" class="login-box__input-label"
+              >Mật khẩu <span style="color: red">*</span></label
+            >
+            <input
+              type="password"
+              id="register__password"
+              name="register__password"
+              class="login-box__input-password"
+              placeholder="Nhập mật khẩu của bạn tại đây"
+            />
+          </div>
+          <div class="login-box__input-item">
+            <label for="register__retype-password" class="login-box__input-label"
+              >Nhập lại mật khẩu <span style="color: red">*</span></label
+            >
+            <input
+              type="password"
+              id="register__retype-password"
+              name="register__retype-password"
+              class="login-box__input-password"
+              placeholder="Nhập mật khẩu của bạn tại đây"
+            />
+          </div>
+          <div class="login-box__btn">Đăng ký</div>
+        </div>
+        <div class="login-box__or">
+          <div class="login-box__or-before"></div>
+          Hoặc
+          <div class="login-box__or-after"></div>
+        </div>
+        <div class="login-box__facebook-btn">
+          <img src="./assets/icon/login-facebook-icon.png" alt="Facebook" class="login-box__icon" />
+          Đăng nhập bằng Facebook
+        </div>
+        <div class="login-box__google-btn">
+          <img src="./assets/icon/login-google-icon.png" alt="Goolge" class="login-box__icon" />
+          Đăng nhập bằng Google
+        </div>
+      </div>
+    </div>
+
+    <!-- Register Agent Modal component -->
+    <div id="registerAgentModal" class="modal">
+      <!-- Register Agent Modal content -->
+      <div class="register-agent__box">
+        <span class="register-agent__close-btn">&times;</span>
+        <img src="./assets/img/logo.svg" alt="Logo" class="register-agent__logo" />
+        <div class="register-agent__header">Đăng ký làm đại lý</div>
+        <div class="register-agent__input-item">
+          <label for="login__acc" class="register-agent__input-label"
+            >Tên của bạn <span style="color: red">*</span></label
+          >
+          <input
+            type="text"
+            id="login__acc"
+            name="login__acc"
+            class="register-agent__input-text"
+            placeholder="Nhập tài khoàn hoặc email của bạn"
+          />
+        </div>
+        <div class="register-agent__input-item">
+          <label for="login__acc" class="register-agent__input-label"
+            >Tài khoản hoặc email <span style="color: red">*</span></label
+          >
+          <input
+            type="text"
+            id="login__acc"
+            name="login__acc"
+            class="register-agent__input-text"
+            placeholder="Nhập tài khoàn hoặc email của bạn"
+          />
+        </div>
+        <div class="register-agent__input-item">
+          <label for="login__acc" class="register-agent__input-label"
+            >Sô điện thoại của bạn <span style="color: red">*</span></label
+          >
+          <input
+            type="text"
+            id="login__acc"
+            name="login__acc"
+            class="register-agent__input-text"
+            placeholder="Nhập tài khoàn hoặc email của bạn"
+          />
+        </div>
+        <div class="register-agent__input-item">
+          <label for="login__acc" class="register-agent__input-label">Địa chỉ <span style="color: red">*</span></label>
+          <input
+            type="text"
+            id="login__acc"
+            name="login__acc"
+            class="register-agent__input-text"
+            placeholder="Nhập tài khoàn hoặc email của bạn"
+          />
+        </div>
+        <div class="register-agent__input-item">
+          <label for="login__acc" class="register-agent__input-label">Thông tin hiện tại</label>
+          <select class="register-agent__select">
+            <option class="register-agent__select-option" value="a">Đang kinh doanh vật tư nông nghiệp</option>
+            <option class="register-agent__select-option" value="b">Chưa kinh doanh/Muốn hợp tác</option>
+            <option class="register-agent__select-option" value="c">Đang kinh doanh Online</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
