@@ -1,928 +1,826 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Damion&family=Open+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/grid.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <header class="s-none">
-      <div class="header-banner">
-        <div class="header-banner__container">
-          <img src="./assets/img/header-banner.svg" alt="Header Banner" class="header-banner__img" />
-          <span class="header-banner__btn">XEM THÊM</span>
-        </div>
-      </div>
-      <div class="grid wide header-function">
-        <img src="./assets/img/logo.svg" alt="" class="header-logo" />
-        <div class="header-search">
-          <input type="text" placeholder="Tìm kiếm tại đây" class="header-search__input" />
-          <img src="./assets/icon/search.svg" class="header-search__icon" />
-        </div>
-        <div class="header-list-btn">
-          <div class="header-btn header-heart-btn">
-            <img src="./assets/icon/heart.svg" alt="" class="" />
-            <span class="header-amount header-heart-amount">2</span>
-          </div>
-          <span class="ml-24">300.00VNĐ</span>
-          <div class="header-btn header-cart-btn ml-10">
-            <img src="./assets/icon/cart.svg" alt="" class="" />
-            <span class="header-amount header-cart-amount">2</span>
-          </div>
-          <a id="loginBtn" class="header-login-btn">Đăng nhập</a>
-          <img src="./assets/icon/user-circle.svg" alt="" class="ml-10" />
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Damion&family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet" />
 
-      <div class="header-navbar">
-        <div class="grid wide header-navbar__content">
-          <div>
-            <div class="header-navbar__btn">
-              <img src="./assets/icon/bar.svg" />
-              Danh mục sản phẩm
-              <img src="./assets/icon/caret-down.svg" />
-              <div class="header-navbar__dropdown">
-                <ul>
-                  <li>Thuốc trừ bệnh sinh học</li>
-                  <li>Thuốc trừ sâu sinh học</li>
-                  <li>Dinh dưỡng cho cây</li>
-                  <li>Hỗ trợ nông nghiệp</li>
-                  <li>Phòng trừ bệnh</li>
-                </ul>
-              </div>
-            </div>
-            <ul>
-              <li>Sản phẩm</li>
-              <li>Hỏi đáp</li>
-              <li>Về chúng tôi</li>
-              <li>Hỗ trợ</li>
-            </ul>
-          </div>
-          <div class="header-navbar__support">
-            <img src="./assets/icon/headphone.svg" />
-            <div class="ml-10">
-              <p class="header-navbar__support-phone">0363631997</p>
-              <p class="header-navbar__support-desc">Trung tâm hỗ trợ 24/7</p>
-            </div>
-          </div>
-        </div>
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/grid.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header class="s-none">
+    <div class="header-banner">
+      <div class="header-banner__container">
+        <img src="./assets/img/header-banner.svg" alt="Header Banner" class="header-banner__img" />
+        <span class="header-banner__btn">XEM THÊM</span>
       </div>
-    </header>
-    <div class="grid wide s-px-20">
-      <!-- Featured Image -->
-      <div class="row mt-24 s-none">
-        <div class="col l-3">
-          <div class="featured-img-1">
-            <span class="featured-img-1__tag">Sản phẩm mới</span>
-            <div class="featured-img-1__info">
-              <div class="featured-img-1__category">Loại sản phẩm</div>
-              <div class="featured-img-1__name">BS04 - TRIZON</div>
-              <div class="featured-img-1__price">152.000 VNĐ</div>
+    </div>
+    <div class="grid wide header-function">
+      <img src="./assets/img/logo.svg" alt="" class="header-logo" />
+      <div class="header-search">
+        <input type="text" placeholder="Tìm kiếm tại đây" class="header-search__input" />
+        <img src="./assets/icon/search.svg" class="header-search__icon" />
+      </div>
+      <div class="header-list-btn">
+        <div class="header-btn header-heart-btn">
+          <img src="./assets/icon/heart.svg" alt="" class="" />
+          <span class="header-amount header-heart-amount">2</span>
+        </div>
+        <span class="ml-24">300.00VNĐ</span>
+        <div class="header-btn header-cart-btn ml-10">
+          <img src="./assets/icon/cart.svg" alt="" class="" />
+          <span class="header-amount header-cart-amount">2</span>
+        </div>
+        <a id="loginBtn" class="header-login-btn">Đăng nhập</a>
+        <img src="./assets/icon/user-circle.svg" alt="" class="ml-10" />
+      </div>
+    </div>
+
+    <div class="header-navbar">
+      <div class="grid wide header-navbar__content">
+        <div>
+          <div class="header-navbar__btn">
+            <img src="./assets/icon/bar.svg" />
+            Danh mục sản phẩm
+            <img src="./assets/icon/caret-down.svg" />
+            <div class="header-navbar__dropdown">
+              <ul>
+                <li>Thuốc trừ bệnh sinh học</li>
+                <li>Thuốc trừ sâu sinh học</li>
+                <li>Dinh dưỡng cho cây</li>
+                <li>Hỗ trợ nông nghiệp</li>
+                <li>Phòng trừ bệnh</li>
+              </ul>
             </div>
-            <img src="./assets/img/featured-img-1.png" alt="" class="featured-img-1__img" />
-            <span class="featured-img-1__btn btn btn-primary">Chi tiết</span>
           </div>
+          <ul>
+            <li>Sản phẩm</li>
+            <li>Hỏi đáp</li>
+            <li>Về chúng tôi</li>
+            <li>Hỗ trợ</li>
+          </ul>
         </div>
-        <div class="col l-6">
-          <div class="featured-img-2">
-            <img src="./assets/img/featured-img-2.jpg" alt="" class="featured-img-2__img" />
-            <span class="featured-img-2__btn btn btn-primary">Mua ngay</span>
-          </div>
-        </div>
-        <div class="col l-3 featured-img-34">
-          <div class="featured-img-3">
-            <img src="./assets/img/featured-img-3.png" alt="" class="featured-img-3__img" />
-            <div class="featured-img-3__time">Từ ngày 10-20.2</div>
-            <div class="featured-img-3__discount">Giảm giá 20%</div>
-            <span class="featured-img-3__btn btn btn-gold">Mua ngay</span>
-          </div>
-          <div class="featured-img-4">
-            <img src="./assets/img/featured-img-4.png" alt="" class="featured-img-4__img" />
-            <div class="featured-img-4__name">BS04 - TRIZON</div>
-            <div class="featured-img-4__time">Từ ngày 10-20.2</div>
-            <div class="featured-img-4__discount">Giảm giá 20%</div>
-            <span class="featured-img-4__btn btn btn-brown">Mua ngay</span>
+        <div class="header-navbar__support">
+          <img src="./assets/icon/headphone.svg" />
+          <div class="ml-10">
+            <p class="header-navbar__support-phone">0363631997</p>
+            <p class="header-navbar__support-desc">Trung tâm hỗ trợ 24/7</p>
           </div>
         </div>
       </div>
+    </div>
+  </header>
+  <div class="grid wide s-px-20">
+    <!-- Featured Image -->
+    <div class="row mt-24 s-none">
+      <div class="col l-3">
+        <div class="featured-img-1">
+          <span class="featured-img-1__tag">Sản phẩm mới</span>
+          <div class="featured-img-1__info">
+            <div class="featured-img-1__category">Loại sản phẩm</div>
+            <div class="featured-img-1__name">BS04 - TRIZON</div>
+            <div class="featured-img-1__price">152.000 VNĐ</div>
+          </div>
+          <img src="./assets/img/featured-img-1.png" alt="" class="featured-img-1__img" />
+          <span class="featured-img-1__btn btn btn-primary">Chi tiết</span>
+        </div>
+      </div>
+      <div class="col l-6">
+        <div class="featured-img-2">
+          <img src="./assets/img/featured-img-2.jpg" alt="" class="featured-img-2__img" />
+          <span class="featured-img-2__btn btn btn-primary">Mua ngay</span>
+        </div>
+      </div>
+      <div class="col l-3 featured-img-34">
+        <div class="featured-img-3">
+          <img src="./assets/img/featured-img-3.png" alt="" class="featured-img-3__img" />
+          <div class="featured-img-3__time">Từ ngày 10-20.2</div>
+          <div class="featured-img-3__discount">Giảm giá 20%</div>
+          <span class="featured-img-3__btn btn btn-gold">Mua ngay</span>
+        </div>
+        <div class="featured-img-4">
+          <img src="./assets/img/featured-img-4.png" alt="" class="featured-img-4__img" />
+          <div class="featured-img-4__name">BS04 - TRIZON</div>
+          <div class="featured-img-4__time">Từ ngày 10-20.2</div>
+          <div class="featured-img-4__discount">Giảm giá 20%</div>
+          <span class="featured-img-4__btn btn btn-brown">Mua ngay</span>
+        </div>
+      </div>
+    </div>
 
-      <!-- Featured Icon -->
-      <div class="row featured">
-        <div class="col l-3 c-12">
-          <div class="featured__container">
-            <img src="./assets/icon/free-delivery.svg" alt="" class="featured__icon" />
-            <div class="featured__content">
-              <p class="featured__title">Giao hàng miễn phí</p>
-              <p class="featured__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col l-3 c-12 s-mt-24">
-          <div class="featured__container">
-            <img src="./assets/icon/easy-returns.svg" alt="" class="featured__icon" />
-            <div class="featured__content">
-              <p class="featured__title">Đổi trả dễ dàng</p>
-              <p class="featured__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col l-3 c-12 s-mt-24">
-          <div class="featured__container">
-            <img src="./assets/icon/safe.svg" alt="" class="featured__icon" />
-            <div class="featured__content">
-              <p class="featured__title">An toàn không độc hại</p>
-              <p class="featured__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col l-3 c-12 s-mt-24">
-          <div class="featured__container">
-            <img src="./assets/icon/organic-farming.svg" alt="" class="featured__icon" />
-            <div class="featured__content">
-              <p class="featured__title">Canh tác hữu cơ</p>
-              <p class="featured__desc">Sử dụng cho sản xuất nông nghiệp theo tiêu chuẩn hữu cơ</p>
-            </div>
+    <!-- Featured Icon -->
+    <div class="row featured">
+      <div class="col l-3 c-12">
+        <div class="featured__container">
+          <img src="./assets/icon/free-delivery.svg" alt="" class="featured__icon" />
+          <div class="featured__content">
+            <p class="featured__title">Giao hàng miễn phí</p>
+            <p class="featured__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
       </div>
-
-      <!-- Product Portfolio -->
-      <div class="product-portfolio">
-        <div class="brand-name">
-          <span class="brand-name__text">VNFARM <span class="brand-name__decorate"></span></span>
-        </div>
-        <div class="homepage-heading">
-          <h2 class="homepage-heading__text">Danh mục sản phẩm <span class="homepage-heading__decorate"></span></h2>
-        </div>
-        <div class="row product-portfolio__list-box">
-          <div class="col l-2-4 c-6">
-            <div class="product-portfolio__box box-jade-green">
-              <h3 class="product-portfolio__title">Thuốc trừ bệnh<br />sinh học</h3>
-              <p class="product-portfolio__amount">20 sản phẩm</p>
-              <img
-                src="./assets/img/thuoc-tru-benh-sinh-học.svg"
-                alt="Thuốc trừ bệnh sinh học"
-                class="product-portfolio__img"
-              />
-            </div>
-          </div>
-          <div class="col l-2-4 c-6">
-            <div class="product-portfolio__box box-purple">
-              <h3 class="product-portfolio__title">Thuốc trừ sâu<br />sinh học</h3>
-              <p class="product-portfolio__amount">20 sản phẩm</p>
-              <img
-                src="./assets/img/tru-sau-sinh-hoc.svg"
-                alt="Thuốc trừ sâu sinh học"
-                class="product-portfolio__img"
-              />
-            </div>
-          </div>
-          <div class="col l-2-4 c-6 s-mt-111">
-            <div class="product-portfolio__box box-green">
-              <h3 class="product-portfolio__title">Dinh dưỡng<br />cho cây</h3>
-              <p class="product-portfolio__amount">20 sản phẩm</p>
-              <img src="./assets/img/dinh-duong-cho-cay.svg" alt="Dinh dưỡng cho cây" class="product-portfolio__img" />
-            </div>
-          </div>
-          <div class="col l-2-4 c-6 s-mt-111">
-            <div class="product-portfolio__box box-gold">
-              <h3 class="product-portfolio__title">Hỗ trợ nông nghiệp</h3>
-              <p class="product-portfolio__amount">20 sản phẩm</p>
-              <img src="./assets/img/ho-tro-nong-nghiep.svg" alt="Hỗ trợ nông nghiệp" class="product-portfolio__img" />
-            </div>
-          </div>
-          <div class="col l-2-4 c-12 s-mt-111">
-            <div class="product-portfolio__box box-blue">
-              <h3 class="product-portfolio__title">Phòng trừ tuyến trùng</h3>
-              <p class="product-portfolio__amount">20 sản phẩm</p>
-              <img
-                src="./assets/img/phong-tru-tuyen-trung.svg"
-                alt="Phòng trừ tuyến trùng"
-                class="product-portfolio__img"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="recommend-large">
-          <div class="row">
-            <div class="col l-6 c-12">
-              <img src="./assets/img/physa.png" alt="Physa" class="recommend-large__img" />
-            </div>
-            <div class="col l-6 c-12">
-              <p class="recommend-large__text">Gợi ý cho bạn</p>
-              <h3 class="recommend-large__product">BS04 - <span class="text-primary">TRIZON</span></h3>
-              <p class="recommend-large__product-desc">
-                The liber tempor cum soluta nobis eleifend option congue doming quod mazim placerat facer possim assum.
-              </p>
-              <div class="row">
-                <div class="col l-6 pr-24 c-12">
-                  <h4 class="recommend-large__product-element">Thành Phần</h4>
-                  <p class="recommend-large__product-element-desc">Chaetomium cupreum… 1.5CFU/g</p>
-                  <span class="btn btn-primary recommend-large__product-btn">xem chi tiết</span>
-                </div>
-                <div class="col l-6 c-12">
-                  <h4 class="recommend-large__product-uses">Công dụng</h4>
-                  <p class="recommend-large__product-uses-desc">Đặc trị đạo ôn, bệnh do nấm và vi khuẩn gây ra</p>
-                  <span class="btn btn-blue recommend-large__product-btn s-none">Thêm vào giỏ hàng</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Small Banner -->
-        <div class="row mt-40 s-mt-16">
-          <div class="col l-4 s-none">
-            <img src="./assets/img/banner/advertisement-1.png" alt="Advertisement" />
-          </div>
-          <div class="col l-4 c-12">
-            <img src="./assets/img/banner/advertisement-2.png" alt="Advertisement" class="s-w-full" />
-          </div>
-          <div class="col l-4 s-none">
-            <img src="./assets/img/banner/advertisement-3.png" alt="Advertisement" />
+      <div class="col l-3 c-12 s-mt-24">
+        <div class="featured__container">
+          <img src="./assets/icon/easy-returns.svg" alt="" class="featured__icon" />
+          <div class="featured__content">
+            <p class="featured__title">Đổi trả dễ dàng</p>
+            <p class="featured__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
       </div>
+      <div class="col l-3 c-12 s-mt-24">
+        <div class="featured__container">
+          <img src="./assets/icon/safe.svg" alt="" class="featured__icon" />
+          <div class="featured__content">
+            <p class="featured__title">An toàn không độc hại</p>
+            <p class="featured__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col l-3 c-12 s-mt-24">
+        <div class="featured__container">
+          <img src="./assets/icon/organic-farming.svg" alt="" class="featured__icon" />
+          <div class="featured__content">
+            <p class="featured__title">Canh tác hữu cơ</p>
+            <p class="featured__desc">Sử dụng cho sản xuất nông nghiệp theo tiêu chuẩn hữu cơ</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Product Portfolio -->
+    <div class="product-portfolio">
       <div class="brand-name">
         <span class="brand-name__text">VNFARM <span class="brand-name__decorate"></span></span>
       </div>
       <div class="homepage-heading">
-        <h2 class="homepage-heading__text">Sản phẩm của chúng tôi<span class="homepage-heading__decorate"></span></h2>
+        <h2 class="homepage-heading__text">Danh mục sản phẩm <span class="homepage-heading__decorate"></span></h2>
       </div>
-
-      <!-- Category list -->
-      <div class="list-category">
-        <span class="btn-category btn-primary">Tất cả</span>
-        <span class="btn-category btn-gray">Dinh dưỡng cho cây</span>
-        <span class="btn-category btn-gray">Thuốc trừ bệnh sinh học</span>
-        <span class="btn-category btn-gray">Thuốc trừ sâu sinh học</span>
-        <span class="btn-category btn-gray">Phòng trừ tuyến trùng</span>
-        <span class="btn-category btn-gray">Hỗ trợ nông</span>
+      <div class="row product-portfolio__list-box">
+        <div class="swiper swiperListProduct">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product-portfolio__box box-jade-green">
+                <h3 class="product-portfolio__title">Thuốc trừ bệnh<br />sinh học</h3>
+                <p class="product-portfolio__amount">20 sản phẩm</p>
+                <img src="./assets/img/thuoc-tru-benh-sinh-học.svg" alt="Thuốc trừ bệnh sinh học"
+                  class="product-portfolio__img" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-portfolio__box box-purple">
+                <h3 class="product-portfolio__title">Thuốc trừ sâu<br />sinh học</h3>
+                <p class="product-portfolio__amount">20 sản phẩm</p>
+                <img src="./assets/img/tru-sau-sinh-hoc.svg" alt="Thuốc trừ sâu sinh học"
+                  class="product-portfolio__img" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-portfolio__box box-green">
+                <h3 class="product-portfolio__title">Dinh dưỡng<br />cho cây</h3>
+                <p class="product-portfolio__amount">20 sản phẩm</p>
+                <img src="./assets/img/dinh-duong-cho-cay.svg" alt="Dinh dưỡng cho cây"
+                  class="product-portfolio__img" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-portfolio__box box-gold">
+                <h3 class="product-portfolio__title">Hỗ trợ nông nghiệp</h3>
+                <p class="product-portfolio__amount">20 sản phẩm</p>
+                <img src="./assets/img/ho-tro-nong-nghiep.svg" alt="Hỗ trợ nông nghiệp"
+                  class="product-portfolio__img" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="product-portfolio__box box-blue">
+                <h3 class="product-portfolio__title">Phòng trừ tuyến trùng</h3>
+                <p class="product-portfolio__amount">20 sản phẩm</p>
+                <img src="./assets/img/phong-tru-tuyen-trung.svg" alt="Phòng trừ tuyến trùng"
+                  class="product-portfolio__img" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </div>
-
-      <!-- Product List -->
-      <div class="row">
-        <div class="col l-3 c-6">
-          <div class="product-box">
-            <span class="product-box__discount">-15%</span>
-            <svg
-              width="18"
-              height="17"
-              viewBox="0 0 18 17"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="product-box__heart-btn"
-            >
-              <path
-                d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
-                fill="#3FA000"
-              />
-            </svg>
-            <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
-            <p class="product-box__title">BS04 - TRIZON</p>
-            <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
-            <p class="product-box__price">
-              <span class="product-box__current-price">300.000 VNĐ</span>
-              <span class="product-box__original-price">400.000 VNĐ</span>
-            </p>
-            <img src="./assets/icon/5-star.svg" class="product-box__rating" />
-            <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
+      <div class="recommend-large">
+        <div class="row">
+          <div class="col l-6 c-12">
+            <img src="./assets/img/physa.png" alt="Physa" class="recommend-large__img" />
           </div>
-        </div>
-        <div class="col l-3 c-6">
-          <div class="product-box">
-            <span class="product-box__discount">-15%</span>
-            <svg
-              width="18"
-              height="17"
-              viewBox="0 0 18 17"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="product-box__heart-btn"
-            >
-              <path
-                d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
-                fill="#3FA000"
-              />
-            </svg>
-            <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
-            <p class="product-box__title">BS04 - TRIZON</p>
-            <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
-            <p class="product-box__price">
-              <span class="product-box__current-price">300.000 VNĐ</span>
-              <span class="product-box__original-price">400.000 VNĐ</span>
+          <div class="col l-6 c-12">
+            <p class="recommend-large__text">Gợi ý cho bạn</p>
+            <h3 class="recommend-large__product">BS04 - <span class="text-primary">TRIZON</span></h3>
+            <p class="recommend-large__product-desc">
+              The liber tempor cum soluta nobis eleifend option congue doming quod mazim placerat facer possim assum.
             </p>
-            <img src="./assets/icon/5-star.svg" class="product-box__rating" />
-            <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
-          </div>
-        </div>
-        <div class="col l-3 c-6 s-mt-16">
-          <div class="product-box">
-            <span class="product-box__discount">-15%</span>
-            <svg
-              width="18"
-              height="17"
-              viewBox="0 0 18 17"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="product-box__heart-btn"
-            >
-              <path
-                d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
-                fill="#3FA000"
-              />
-            </svg>
-            <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
-            <p class="product-box__title">BS04 - TRIZON</p>
-            <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
-            <p class="product-box__price">
-              <span class="product-box__current-price">300.000 VNĐ</span>
-              <span class="product-box__original-price">400.000 VNĐ</span>
-            </p>
-            <img src="./assets/icon/5-star.svg" class="product-box__rating" />
-            <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
-          </div>
-        </div>
-        <div class="col l-3 c-6 s-mt-16">
-          <div class="product-box">
-            <span class="product-box__discount">-15%</span>
-            <svg
-              width="18"
-              height="17"
-              viewBox="0 0 18 17"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="product-box__heart-btn"
-            >
-              <path
-                d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
-                fill="#3FA000"
-              />
-            </svg>
-            <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
-            <p class="product-box__title">BS04 - TRIZON</p>
-            <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
-            <p class="product-box__price">
-              <span class="product-box__current-price">300.000 VNĐ</span>
-              <span class="product-box__original-price">400.000 VNĐ</span>
-            </p>
-            <img src="./assets/icon/5-star.svg" class="product-box__rating" />
-            <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
+            <div class="row">
+              <div class="col l-6 pr-24 c-12">
+                <h4 class="recommend-large__product-element">Thành Phần</h4>
+                <p class="recommend-large__product-element-desc">Chaetomium cupreum… 1.5CFU/g</p>
+                <span class="btn btn-primary recommend-large__product-btn">xem chi tiết</span>
+              </div>
+              <div class="col l-6 c-12">
+                <h4 class="recommend-large__product-uses">Công dụng</h4>
+                <p class="recommend-large__product-uses-desc">Đặc trị đạo ôn, bệnh do nấm và vi khuẩn gây ra</p>
+                <span class="btn btn-blue recommend-large__product-btn s-none">Thêm vào giỏ hàng</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
+      <!-- Small Banner -->
       <div class="row mt-40 s-mt-16">
-        <div class="col l-3 c-6">
-          <div class="product-box">
-            <span class="product-box__discount">-15%</span>
-            <svg
-              width="18"
-              height="17"
-              viewBox="0 0 18 17"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="product-box__heart-btn"
-            >
-              <path
-                d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
-                fill="#3FA000"
-              />
-            </svg>
-            <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
-            <p class="product-box__title">BS04 - TRIZON</p>
-            <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
-            <p class="product-box__price">
-              <span class="product-box__current-price">300.000 VNĐ</span>
-              <span class="product-box__original-price">400.000 VNĐ</span>
-            </p>
-            <img src="./assets/icon/5-star.svg" class="product-box__rating" />
-            <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
-          </div>
+        <div class="col l-4 s-none">
+          <img src="./assets/img/banner/advertisement-1.png" alt="Advertisement" />
         </div>
-        <div class="col l-3 c-6">
-          <div class="product-box">
-            <span class="product-box__discount">-15%</span>
-            <svg
-              width="18"
-              height="17"
-              viewBox="0 0 18 17"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="product-box__heart-btn"
-            >
-              <path
-                d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
-                fill="#3FA000"
-              />
-            </svg>
-            <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
-            <p class="product-box__title">BS04 - TRIZON</p>
-            <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
-            <p class="product-box__price">
-              <span class="product-box__current-price">300.000 VNĐ</span>
-              <span class="product-box__original-price">400.000 VNĐ</span>
-            </p>
-            <img src="./assets/icon/5-star.svg" class="product-box__rating" />
-            <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
-          </div>
+        <div class="col l-4 c-12">
+          <img src="./assets/img/banner/advertisement-2.png" alt="Advertisement" class="s-w-full" />
         </div>
-        <div class="col l-3 c-6 s-mt-16">
-          <div class="product-box">
-            <span class="product-box__discount">-15%</span>
-            <svg
-              width="18"
-              height="17"
-              viewBox="0 0 18 17"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="product-box__heart-btn"
-            >
-              <path
-                d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
-                fill="#3FA000"
-              />
-            </svg>
-            <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
-            <p class="product-box__title">BS04 - TRIZON</p>
-            <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
-            <p class="product-box__price">
-              <span class="product-box__current-price">300.000 VNĐ</span>
-              <span class="product-box__original-price">400.000 VNĐ</span>
-            </p>
-            <img src="./assets/icon/5-star.svg" class="product-box__rating" />
-            <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
-          </div>
-        </div>
-        <div class="col l-3 c-6 s-mt-16">
-          <div class="product-box">
-            <span class="product-box__discount">-15%</span>
-            <svg
-              width="18"
-              height="17"
-              viewBox="0 0 18 17"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="product-box__heart-btn"
-            >
-              <path
-                d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
-                fill="#3FA000"
-              />
-            </svg>
-            <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
-            <p class="product-box__title">BS04 - TRIZON</p>
-            <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
-            <p class="product-box__price">
-              <span class="product-box__current-price">300.000 VNĐ</span>
-              <span class="product-box__original-price">400.000 VNĐ</span>
-            </p>
-            <img src="./assets/icon/5-star.svg" class="product-box__rating" />
-            <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
-          </div>
+        <div class="col l-4 s-none">
+          <img src="./assets/img/banner/advertisement-3.png" alt="Advertisement" />
         </div>
       </div>
-
-      <!-- About Us -->
-      <div class="brand-name mt-80">
-        <span class="brand-name__text">VNFARM <span class="brand-name__decorate"></span></span>
-      </div>
-      <div class="homepage-heading">
-        <h2 class="homepage-heading__text">Giới thiệu về chúng tôi<span class="homepage-heading__decorate"></span></h2>
-      </div>
-      <div class="row mt-62">
-        <div class="col l-3 c-12">
-          <div class="about-us__banner-1">
-            <div class="about-us__content-on-bottom">
-              <p class="about-us__title">Chúng tôi là ai?</p>
-              <p class="about-us__desc">
-                Cras ultricies ligula sed magna dictum porta. Praesent sapien massa, convallis a pellentesque nec,
-                egestas non nisi
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col l-3 c-12 s-mt-24">
-          <div class="about-us__banner-2">
-            <div class="about-us__content-on-top">
-              <p class="about-us__title">Bảo vệ môi trường</p>
-              <p class="about-us__desc">
-                Cras ultricies ligula sed magna dictum porta. Praesent sapien massa, convallis a pellentesque nec,
-                egestas non nisi
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col l-3 c-12 s-mt-24">
-          <div class="about-us__banner-3">
-            <div class="about-us__content-on-bottom">
-              <p class="about-us__title">Đội ngũ chuyên gia</p>
-              <p class="about-us__desc">
-                Cras ultricies ligula sed magna dictum porta. Praesent sapien massa, convallis a pellentesque nec,
-                egestas non nisi
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col l-3 c-12 s-mt-24">
-          <div class="about-us__banner-4">
-            <div class="about-us__content-on-top">
-              <p class="about-us__title">Công nghệ sản xuất đạt chuẩn<br />ISO 9001:2015</p>
-              <p class="about-us__desc">
-                Cras ultricies ligula sed magna dictum porta. Praesent sapien massa, convallis a pellentesque nec,
-                egestas non nisi
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Q&A -->
-      <div class="brand-name mt-80">
-        <span class="brand-name__text">VNFARM <span class="brand-name__decorate"></span></span>
-      </div>
-      <div class="homepage-heading">
-        <h2 class="homepage-heading__text">Chuyên mục hỏi đáp<span class="homepage-heading__decorate"></span></h2>
-      </div>
-      <div class="qa-btn">
-        <span class="btn btn-primary">Xem thêm</span>
-      </div>
-      <div class="row">
-        <div class="col l-3 qa-img-12 c-12">
-          <div class="qa-img">
-            <img src="./assets/img/qa-img-1.png" alt="" class="qa-img s-w-full" />
-            <p class="qa-img__title">Bạn đã biết những cách tận dụng thùng xốp trồng rau này chưa?</p>
-          </div>
-          <div class="qa-img">
-            <img src="./assets/img/qa-img-2.png" alt="" class="qa-img s-w-full s-mt-24" />
-            <p class="qa-img__title">Bạn đã biết những cách tận dụng thùng xốp trồng rau này chưa?</p>
-          </div>
-        </div>
-        <div class="col l-6 c-12">
-          <div class="qa-img">
-            <img src="./assets/img/qa-img-3.png" alt="" class="qa-img s-w-full s-mt-24" />
-            <div class="qa-img__content">
-              <p class="qa-img__heading">Sản phẩm chất lượng</p>
-              <p class="qa-img__desc">
-                Donec rutrum congue leo eget malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non
-                nisi.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col l-3 qa-img-45 c-12">
-          <div class="qa-img">
-            <img src="./assets/img/qa-img-4.png" alt="" class="qa-img s-w-full s-mt-24" />
-            <p class="qa-img__title">Bạn đã biết những cách tận dụng thùng xốp trồng rau này chưa?</p>
-          </div>
-          <div class="qa-img">
-            <img src="./assets/img/qa-img-5.png" alt="" class="qa-img s-w-full s-mt-24" />
-            <p class="qa-img__title">Bạn đã biết những cách tận dụng thùng xốp trồng rau này chưa?</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Media talk about us -->
-      <div class="brand-name mt-80">
-        <span class="brand-name__text">VNFARM <span class="brand-name__decorate"></span></span>
-      </div>
-      <div class="homepage-heading">
-        <h2 class="homepage-heading__text">Báo chí nói về chúng tôi<span class="homepage-heading__decorate"></span></h2>
-      </div>
-      <div class="list-media">
-        <img src="./assets/img/media-logo/dan-tri.png" alt="Dân Trí" class="list-media__logo" />
-        <img src="./assets/img/media-logo/vnexpress.png" alt="VnExpress" class="list-media__logo" />
-        <img src="./assets/img/media-logo/thanh-nien.png" alt="Thanh Niên" class="list-media__logo" />
-        <img src="./assets/img/media-logo/tuoi-tre.png" alt="Tuổi Trẻ" class="list-media__logo" />
-        <img src="./assets/img/media-logo/techcombank.png" alt="Techcombank" class="list-media__logo" />
-        <img src="./assets/img/media-logo/24h.png" alt="24h" class="list-media__logo" />
-      </div>
-
-      <!-- Media talk about us -->
-      <div class="brand-name mt-40">
-        <span class="brand-name__text">VNFARM <span class="brand-name__decorate"></span></span>
-      </div>
-      <div class="homepage-heading">
-        <h2 class="homepage-heading__text">Đăng ký làm đại lý<span class="homepage-heading__decorate"></span></h2>
-      </div>
-      <div class="register-agent">
-        Bạn đang hoạt động trong lĩnh vực nông nghiệp. Bạn muốn mở rộng mặt hàng kinh doanh và trở thành đại lý của
-        VNfarm? Gửi yêu cầu đăng kí làm đại lý cho chúng tôi ngay để được liên hệ và tư vấn.
-      </div>
-      <div class="register-agent-btn">
-        <span id="registerAgentBtn" class="btn btn-primary s-text-16">Đăng ký làm đại lý</span>
-      </div>
-      <!-- end -->
     </div>
 
-    <!-- footer component -->
-    <footer>
-      <div class="grid wide s-px-20">
-        <div class="row footer__list-title">
-          <div class="col l-3-6 c-12">
-            <!-- <h4 class="footer-title">abc</h4> -->
-            <img src="./assets/img/logo.svg" alt="Logo" />
-            <ul class="footer__col-1">
-              <li><img src="./assets/icon/building.svg" alt="" /> CÔNG TY CỔ PHẦN NÔNG NGHIỆP VNFARM</li>
-              <li>
-                <img src="./assets/icon/scale-balanced.svg" alt="" />Do sở kế hoạch và Đầu tư TPHCM cấp lần đầu ngày
-                14/05/2020
-              </li>
-              <li><img src="./assets/icon/location-dot.svg" alt="" />Địa chỉ: Tầng 8, Số 520 Cách Mạng Tháng Tám</li>
-              <li><img src="./assets/icon/envelope.svg" alt="" />Admin@vnfarm.com.vn</li>
-            </ul>
-          </div>
-          <div class="col l-2-4 c-12 s-mt-24">
-            <h4 class="footer__title">Thông tin chính sách</h4>
-            <ul class="footer__col-2">
-              <li>Quy chế hoạt động</li>
-              <li>Quy chế hoạt động</li>
-              <li>Quy chế hoạt động</li>
-              <li>Quy chế hoạt động</li>
-            </ul>
-          </div>
-          <div class="col l-2-4 c-12 s-mt-24">
-            <h4 class="footer__title">Khám phá VNFarm</h4>
-            <ul class="footer__col-3">
-              <li>Sản phẩm</li>
-              <li>Hỏi đáp</li>
-              <li>Về chúng tôi</li>
-              <li>Hỗ trợ</li>
-            </ul>
-          </div>
-          <div class="col l-3-6 c-12 s-mt-24">
-            <h4 class="footer__big-title">Chúng tôi lắng nghe bạn</h4>
-            <p class="footer__listen-to-you">
-              Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể nâng cấp trải
-              nghiệm dịch vụ và sản phẩm tốt hơn nữa.
+    <div class="brand-name">
+      <span class="brand-name__text">VNFARM <span class="brand-name__decorate"></span></span>
+    </div>
+    <div class="homepage-heading">
+      <h2 class="homepage-heading__text">Sản phẩm của chúng tôi<span class="homepage-heading__decorate"></span></h2>
+    </div>
+
+    <!-- Category list -->
+    <div class="list-category">
+      <span class="btn-category btn-primary">Tất cả</span>
+      <span class="btn-category btn-gray">Dinh dưỡng cho cây</span>
+      <span class="btn-category btn-gray">Thuốc trừ bệnh sinh học</span>
+      <span class="btn-category btn-gray">Thuốc trừ sâu sinh học</span>
+      <span class="btn-category btn-gray">Phòng trừ tuyến trùng</span>
+      <span class="btn-category btn-gray">Hỗ trợ nông</span>
+    </div>
+
+    <!-- Product List -->
+    <div class="row">
+      <div class="col l-3 c-6">
+        <div class="product-box">
+          <span class="product-box__discount">-15%</span>
+          <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="product-box__heart-btn">
+            <path
+              d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
+              fill="#3FA000" />
+          </svg>
+          <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
+          <p class="product-box__title">BS04 - TRIZON</p>
+          <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
+          <p class="product-box__price">
+            <span class="product-box__current-price">300.000 VNĐ</span>
+            <span class="product-box__original-price">400.000 VNĐ</span>
+          </p>
+          <img src="./assets/icon/5-star.svg" class="product-box__rating" />
+          <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
+        </div>
+      </div>
+      <div class="col l-3 c-6">
+        <div class="product-box">
+          <span class="product-box__discount">-15%</span>
+          <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="product-box__heart-btn">
+            <path
+              d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
+              fill="#3FA000" />
+          </svg>
+          <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
+          <p class="product-box__title">BS04 - TRIZON</p>
+          <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
+          <p class="product-box__price">
+            <span class="product-box__current-price">300.000 VNĐ</span>
+            <span class="product-box__original-price">400.000 VNĐ</span>
+          </p>
+          <img src="./assets/icon/5-star.svg" class="product-box__rating" />
+          <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
+        </div>
+      </div>
+      <div class="col l-3 c-6 s-mt-16">
+        <div class="product-box">
+          <span class="product-box__discount">-15%</span>
+          <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="product-box__heart-btn">
+            <path
+              d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
+              fill="#3FA000" />
+          </svg>
+          <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
+          <p class="product-box__title">BS04 - TRIZON</p>
+          <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
+          <p class="product-box__price">
+            <span class="product-box__current-price">300.000 VNĐ</span>
+            <span class="product-box__original-price">400.000 VNĐ</span>
+          </p>
+          <img src="./assets/icon/5-star.svg" class="product-box__rating" />
+          <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
+        </div>
+      </div>
+      <div class="col l-3 c-6 s-mt-16">
+        <div class="product-box">
+          <span class="product-box__discount">-15%</span>
+          <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="product-box__heart-btn">
+            <path
+              d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
+              fill="#3FA000" />
+          </svg>
+          <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
+          <p class="product-box__title">BS04 - TRIZON</p>
+          <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
+          <p class="product-box__price">
+            <span class="product-box__current-price">300.000 VNĐ</span>
+            <span class="product-box__original-price">400.000 VNĐ</span>
+          </p>
+          <img src="./assets/icon/5-star.svg" class="product-box__rating" />
+          <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-40 s-mt-16">
+      <div class="col l-3 c-6">
+        <div class="product-box">
+          <span class="product-box__discount">-15%</span>
+          <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="product-box__heart-btn">
+            <path
+              d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
+              fill="#3FA000" />
+          </svg>
+          <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
+          <p class="product-box__title">BS04 - TRIZON</p>
+          <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
+          <p class="product-box__price">
+            <span class="product-box__current-price">300.000 VNĐ</span>
+            <span class="product-box__original-price">400.000 VNĐ</span>
+          </p>
+          <img src="./assets/icon/5-star.svg" class="product-box__rating" />
+          <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
+        </div>
+      </div>
+      <div class="col l-3 c-6">
+        <div class="product-box">
+          <span class="product-box__discount">-15%</span>
+          <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="product-box__heart-btn">
+            <path
+              d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
+              fill="#3FA000" />
+          </svg>
+          <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
+          <p class="product-box__title">BS04 - TRIZON</p>
+          <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
+          <p class="product-box__price">
+            <span class="product-box__current-price">300.000 VNĐ</span>
+            <span class="product-box__original-price">400.000 VNĐ</span>
+          </p>
+          <img src="./assets/icon/5-star.svg" class="product-box__rating" />
+          <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
+        </div>
+      </div>
+      <div class="col l-3 c-6 s-mt-16">
+        <div class="product-box">
+          <span class="product-box__discount">-15%</span>
+          <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="product-box__heart-btn">
+            <path
+              d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
+              fill="#3FA000" />
+          </svg>
+          <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
+          <p class="product-box__title">BS04 - TRIZON</p>
+          <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
+          <p class="product-box__price">
+            <span class="product-box__current-price">300.000 VNĐ</span>
+            <span class="product-box__original-price">400.000 VNĐ</span>
+          </p>
+          <img src="./assets/icon/5-star.svg" class="product-box__rating" />
+          <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
+        </div>
+      </div>
+      <div class="col l-3 c-6 s-mt-16">
+        <div class="product-box">
+          <span class="product-box__discount">-15%</span>
+          <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="product-box__heart-btn">
+            <path
+              d="M12.6875 0C11.165 0 9.70375 0.70875 8.75 1.82875C7.79625 0.70875 6.335 0 4.8125 0C2.1175 0 0 2.1175 0 4.8125C0 8.12 2.975 10.815 7.48125 14.91L8.75 16.0563L10.0188 14.9013C14.525 10.815 17.5 8.12 17.5 4.8125C17.5 2.1175 15.3825 0 12.6875 0ZM8.8375 13.6062L8.75 13.6938L8.6625 13.6062C4.4975 9.835 1.75 7.34125 1.75 4.8125C1.75 3.0625 3.0625 1.75 4.8125 1.75C6.16 1.75 7.4725 2.61625 7.93625 3.815H9.5725C10.0275 2.61625 11.34 1.75 12.6875 1.75C14.4375 1.75 15.75 3.0625 15.75 4.8125C15.75 7.34125 13.0025 9.835 8.8375 13.6062Z"
+              fill="#3FA000" />
+          </svg>
+          <img src="./assets/img/0001575_physa_500.png" alt="Physa 500" />
+          <p class="product-box__title">BS04 - TRIZON</p>
+          <p class="product-box__uses">Trị xoắn ngọn, xoắn lá</p>
+          <p class="product-box__price">
+            <span class="product-box__current-price">300.000 VNĐ</span>
+            <span class="product-box__original-price">400.000 VNĐ</span>
+          </p>
+          <img src="./assets/icon/5-star.svg" class="product-box__rating" />
+          <span class="btn btn-primary product-box__btn">Thêm vào giỏ hàng</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us -->
+    <div class="brand-name mt-80">
+      <span class="brand-name__text">VNFARM <span class="brand-name__decorate"></span></span>
+    </div>
+    <div class="homepage-heading">
+      <h2 class="homepage-heading__text">Giới thiệu về chúng tôi<span class="homepage-heading__decorate"></span></h2>
+    </div>
+    <div class="row mt-62">
+      <div class="col l-3 c-12">
+        <div class="about-us__banner-1">
+          <div class="about-us__content-on-bottom">
+            <p class="about-us__title">Chúng tôi là ai?</p>
+            <p class="about-us__desc">
+              Cras ultricies ligula sed magna dictum porta. Praesent sapien massa, convallis a pellentesque nec,
+              egestas non nisi
             </p>
-            <span class="btn btn-primary footer__btn">Gửi ý kiến</span>
-            <div class="footer__list-social s-none">
-              Theo dõi chúng tôi
-              <img src="./assets/icon/youtube.png" alt="Youtube" class="footer__social-logo" />
-              <img src="./assets/icon/facebook.png" alt="Facebook" class="footer__social-logo" />
-              <img src="./assets/icon/tiktok.png" alt="Tiktok" class="footer__social-logo" />
-            </div>
           </div>
         </div>
-        <div class="footer__copyright s-none">
-          <div class="">© 2022 VNFarm. All rights reserved.</div>
-          <div class="footer__support">
-            <div class="row">
-              <div class="col l-2">
-                <img src="./assets/icon/phone-call.svg" alt="" />
-              </div>
-              <div class="col l-10">
-                <p class="footer__support-title">0342331997</p>
-                <p class="footer__support-desc">Làm việc từ 8:00 - 22:00</p>
-              </div>
-            </div>
+      </div>
+      <div class="col l-3 c-12 s-mt-24">
+        <div class="about-us__banner-2">
+          <div class="about-us__content-on-top">
+            <p class="about-us__title">Bảo vệ môi trường</p>
+            <p class="about-us__desc">
+              Cras ultricies ligula sed magna dictum porta. Praesent sapien massa, convallis a pellentesque nec,
+              egestas non nisi
+            </p>
           </div>
-          <div class="footer__support">
-            <div class="row">
-              <div class="col l-2">
-                <img src="./assets/icon/phone-call.svg" alt="" />
-              </div>
-              <div class="col l-10">
-                <p class="footer__support-title">0342331997</p>
-                <p class="footer__support-desc">Làm việc từ 8:00 - 22:00</p>
-              </div>
-            </div>
-          </div>
-          <div class=""><img src="./assets/img/bo-cong-thuong.png" alt="Đã thông báo Bộ Công Thương" /></div>
-          <div class=""><img src="./assets/img/dmca.png" alt="DMCA Logo" /></div>
         </div>
-        <div class="footer-mobile l-none s-block">
+      </div>
+      <div class="col l-3 c-12 s-mt-24">
+        <div class="about-us__banner-3">
+          <div class="about-us__content-on-bottom">
+            <p class="about-us__title">Đội ngũ chuyên gia</p>
+            <p class="about-us__desc">
+              Cras ultricies ligula sed magna dictum porta. Praesent sapien massa, convallis a pellentesque nec,
+              egestas non nisi
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col l-3 c-12 s-mt-24">
+        <div class="about-us__banner-4">
+          <div class="about-us__content-on-top">
+            <p class="about-us__title">Công nghệ sản xuất đạt chuẩn<br />ISO 9001:2015</p>
+            <p class="about-us__desc">
+              Cras ultricies ligula sed magna dictum porta. Praesent sapien massa, convallis a pellentesque nec,
+              egestas non nisi
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q&A -->
+    <div class="brand-name mt-80">
+      <span class="brand-name__text">VNFARM <span class="brand-name__decorate"></span></span>
+    </div>
+    <div class="homepage-heading">
+      <h2 class="homepage-heading__text">Chuyên mục hỏi đáp<span class="homepage-heading__decorate"></span></h2>
+    </div>
+    <div class="qa-btn">
+      <span class="btn btn-primary">Xem thêm</span>
+    </div>
+    <div class="row">
+      <div class="col l-3 qa-img-12 c-12">
+        <div class="qa-img">
+          <img src="./assets/img/qa-img-1.png" alt="" class="qa-img s-w-full" />
+          <p class="qa-img__title">Bạn đã biết những cách tận dụng thùng xốp trồng rau này chưa?</p>
+        </div>
+        <div class="qa-img">
+          <img src="./assets/img/qa-img-2.png" alt="" class="qa-img s-w-full s-mt-24" />
+          <p class="qa-img__title">Bạn đã biết những cách tận dụng thùng xốp trồng rau này chưa?</p>
+        </div>
+      </div>
+      <div class="col l-6 c-12">
+        <div class="qa-img">
+          <img src="./assets/img/qa-img-3.png" alt="" class="qa-img s-w-full s-mt-24" />
+          <div class="qa-img__content">
+            <p class="qa-img__heading">Sản phẩm chất lượng</p>
+            <p class="qa-img__desc">
+              Donec rutrum congue leo eget malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non
+              nisi.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col l-3 qa-img-45 c-12">
+        <div class="qa-img">
+          <img src="./assets/img/qa-img-4.png" alt="" class="qa-img s-w-full s-mt-24" />
+          <p class="qa-img__title">Bạn đã biết những cách tận dụng thùng xốp trồng rau này chưa?</p>
+        </div>
+        <div class="qa-img">
+          <img src="./assets/img/qa-img-5.png" alt="" class="qa-img s-w-full s-mt-24" />
+          <p class="qa-img__title">Bạn đã biết những cách tận dụng thùng xốp trồng rau này chưa?</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Media talk about us -->
+    <div class="brand-name mt-80">
+      <span class="brand-name__text">VNFARM <span class="brand-name__decorate"></span></span>
+    </div>
+    <div class="homepage-heading">
+      <h2 class="homepage-heading__text">Báo chí nói về chúng tôi<span class="homepage-heading__decorate"></span></h2>
+    </div>
+    <div class="list-media">
+      <img src="./assets/img/media-logo/dan-tri.png" alt="Dân Trí" class="list-media__logo" />
+      <img src="./assets/img/media-logo/vnexpress.png" alt="VnExpress" class="list-media__logo" />
+      <img src="./assets/img/media-logo/thanh-nien.png" alt="Thanh Niên" class="list-media__logo" />
+      <img src="./assets/img/media-logo/tuoi-tre.png" alt="Tuổi Trẻ" class="list-media__logo" />
+      <img src="./assets/img/media-logo/techcombank.png" alt="Techcombank" class="list-media__logo" />
+      <img src="./assets/img/media-logo/24h.png" alt="24h" class="list-media__logo" />
+    </div>
+
+    <!-- Media talk about us -->
+    <div class="brand-name mt-40">
+      <span class="brand-name__text">VNFARM <span class="brand-name__decorate"></span></span>
+    </div>
+    <div class="homepage-heading">
+      <h2 class="homepage-heading__text">Đăng ký làm đại lý<span class="homepage-heading__decorate"></span></h2>
+    </div>
+    <div class="register-agent">
+      Bạn đang hoạt động trong lĩnh vực nông nghiệp. Bạn muốn mở rộng mặt hàng kinh doanh và trở thành đại lý của
+      VNfarm? Gửi yêu cầu đăng kí làm đại lý cho chúng tôi ngay để được liên hệ và tư vấn.
+    </div>
+    <div class="register-agent-btn">
+      <span id="registerAgentBtn" class="btn btn-primary s-text-16">Đăng ký làm đại lý</span>
+    </div>
+    <!-- end -->
+  </div>
+
+  <!-- footer component -->
+  <footer>
+    <div class="grid wide s-px-20">
+      <div class="row footer__list-title">
+        <div class="col l-3-6 c-12">
+          <!-- <h4 class="footer-title">abc</h4> -->
+          <img src="./assets/img/logo.svg" alt="Logo" />
+          <ul class="footer__col-1">
+            <li><img src="./assets/icon/building.svg" alt="" /> CÔNG TY CỔ PHẦN NÔNG NGHIỆP VNFARM</li>
+            <li>
+              <img src="./assets/icon/scale-balanced.svg" alt="" />Do sở kế hoạch và Đầu tư TPHCM cấp lần đầu ngày
+              14/05/2020
+            </li>
+            <li><img src="./assets/icon/location-dot.svg" alt="" />Địa chỉ: Tầng 8, Số 520 Cách Mạng Tháng Tám</li>
+            <li><img src="./assets/icon/envelope.svg" alt="" />Admin@vnfarm.com.vn</li>
+          </ul>
+        </div>
+        <div class="col l-2-4 c-12 s-mt-24">
+          <h4 class="footer__title">Thông tin chính sách</h4>
+          <ul class="footer__col-2">
+            <li>Quy chế hoạt động</li>
+            <li>Quy chế hoạt động</li>
+            <li>Quy chế hoạt động</li>
+            <li>Quy chế hoạt động</li>
+          </ul>
+        </div>
+        <div class="col l-2-4 c-12 s-mt-24">
+          <h4 class="footer__title">Khám phá VNFarm</h4>
+          <ul class="footer__col-3">
+            <li>Sản phẩm</li>
+            <li>Hỏi đáp</li>
+            <li>Về chúng tôi</li>
+            <li>Hỗ trợ</li>
+          </ul>
+        </div>
+        <div class="col l-3-6 c-12 s-mt-24">
+          <h4 class="footer__big-title">Chúng tôi lắng nghe bạn</h4>
+          <p class="footer__listen-to-you">
+            Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể nâng cấp trải
+            nghiệm dịch vụ và sản phẩm tốt hơn nữa.
+          </p>
+          <span class="btn btn-primary footer__btn">Gửi ý kiến</span>
+          <div class="footer__list-social s-none">
+            Theo dõi chúng tôi
+            <img src="./assets/icon/youtube.png" alt="Youtube" class="footer__social-logo" />
+            <img src="./assets/icon/facebook.png" alt="Facebook" class="footer__social-logo" />
+            <img src="./assets/icon/tiktok.png" alt="Tiktok" class="footer__social-logo" />
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright s-none">
+        <div class="">© 2022 VNFarm. All rights reserved.</div>
+        <div class="footer__support">
           <div class="row">
-            <div class="col c-6"><img src="./assets/img/bo-cong-thuong.png" alt="" /></div>
-            <div class="col c-6"><img src="./assets/img/dmca.png" alt="" /></div>
+            <div class="col l-2">
+              <img src="./assets/icon/phone-call.svg" alt="" />
+            </div>
+            <div class="col l-10">
+              <p class="footer__support-title">0342331997</p>
+              <p class="footer__support-desc">Làm việc từ 8:00 - 22:00</p>
+            </div>
           </div>
-          <div class="footer-mobile__payment">Cổng thanh toán được bảo đảm</div>
-          <img src="./assets/img/payment-logo.png" alt="" />
+        </div>
+        <div class="footer__support">
           <div class="row">
-            <div class="col c-6 footer-mobile__call">
-              <object data="./assets/icon/phone-call.svg" width="28"></object>
-              <div class="footer-mobile__call-info">
-                <div class="footer-mobile__number">0342331997</div>
-                <div class="footer-mobile__working-time">Làm việc từ 8:00 - 22:00</div>
-              </div>
+            <div class="col l-2">
+              <img src="./assets/icon/phone-call.svg" alt="" />
             </div>
-            <div class="col c-6 footer-mobile__call">
-              <object data="./assets/icon/phone-call.svg" width="28"></object>
-              <div class="footer-mobile__call-info">
-                <div class="footer-mobile__number">0342331997</div>
-                <div class="footer-mobile__working-time">Trung tâm hỗ trợ 24/7</div>
-              </div>
+            <div class="col l-10">
+              <p class="footer__support-title">0342331997</p>
+              <p class="footer__support-desc">Làm việc từ 8:00 - 22:00</p>
             </div>
-            <div class="footer-mobile__follow-us">
-              Theo dõi chúng tôi
-              <div class="footer-mobile__list-follow-icon">
-                <img src="./assets/icon/youtube.png" alt="" class="footer-mobile__follow-icon" />
-                <img src="./assets/icon/facebook.png" alt="" class="footer-mobile__follow-icon" />
-                <img src="./assets/icon/tiktok.png" alt="" class="footer-mobile__follow-icon" />
-              </div>
-            </div>
-            <div class="footer-mobile__copyright-text">© 2022 VNFarm. All rights reserved.</div>
           </div>
         </div>
+        <div class=""><img src="./assets/img/bo-cong-thuong.png" alt="Đã thông báo Bộ Công Thương" /></div>
+        <div class=""><img src="./assets/img/dmca.png" alt="DMCA Logo" /></div>
       </div>
-    </footer>
-
-    <!-- Login Modal component -->
-    <div id="loginModal" class="modal">
-      <div class="login-box">
-        <span class="login-box__close-btn">&times;</span>
-        <img src="./assets/img/logo.svg" alt="Logo" class="login-box__logo" />
-        <div class="login-box__list-tab">
-          <div class="login-box__tab active">Đăng nhập</div>
-          <div class="login-box__tab">Đăng ký</div>
+      <div class="footer-mobile l-none s-block">
+        <div class="row">
+          <div class="col c-6"><img src="./assets/img/bo-cong-thuong.png" alt="" /></div>
+          <div class="col c-6"><img src="./assets/img/dmca.png" alt="" /></div>
         </div>
-        <div class="login-box__tab-content active">
-          <div class="login-box__input-item">
-            <label for="login__acc" class="login-box__input-label"
-              >Tài khoản hoặc email <span style="color: red">*</span></label
-            >
-            <input
-              type="text"
-              id="login__acc"
-              name="login__acc"
-              class="login-box__input-text"
-              placeholder="Nhập tài khoàn hoặc email của bạn"
-            />
-          </div>
-          <div class="login-box__input-item">
-            <label for="login__password" class="login-box__input-label"
-              >Mật khẩu <span style="color: red">*</span></label
-            >
-            <input
-              type="password"
-              id="login__password"
-              name="login__password"
-              class="login-box__input-password"
-              placeholder="Nhập mật khẩu của bạn tại đây"
-            />
-          </div>
-          <div class="login-box__list-action">
-            <div class="login-box__save-password">
-              <input type="checkbox" class="login-box__checkbox" />Lưu mật khẩu
+        <div class="footer-mobile__payment">Cổng thanh toán được bảo đảm</div>
+        <img src="./assets/img/payment-logo.png" alt="" />
+        <div class="row">
+          <div class="col c-6 footer-mobile__call">
+            <object data="./assets/icon/phone-call.svg" width="28"></object>
+            <div class="footer-mobile__call-info">
+              <div class="footer-mobile__number">0342331997</div>
+              <div class="footer-mobile__working-time">Làm việc từ 8:00 - 22:00</div>
             </div>
-            <div class="login-box__forgot-password">Quên mật khẩu ?</div>
           </div>
-          <div class="login-box__btn">Đăng nhập</div>
-        </div>
-        <div class="login-box__tab-content">
-          <div class="login-box__input-item">
-            <label for="register__fname" class="login-box__input-label"
-              >Tên của bạn <span style="color: red">*</span></label
-            >
-            <input
-              type="text"
-              id="register__fname"
-              name="register__fname"
-              class="login-box__input-text"
-              placeholder="Nhập tên của bạn"
-            />
+          <div class="col c-6 footer-mobile__call">
+            <object data="./assets/icon/phone-call.svg" width="28"></object>
+            <div class="footer-mobile__call-info">
+              <div class="footer-mobile__number">0342331997</div>
+              <div class="footer-mobile__working-time">Trung tâm hỗ trợ 24/7</div>
+            </div>
           </div>
-          <div class="login-box__input-item">
-            <label for="register__acc" class="login-box__input-label"
-              >Tài khoản hoặc email <span style="color: red">*</span></label
-            >
-            <input
-              type="text"
-              id="register__acc"
-              name="register__acc"
-              class="login-box__input-text"
-              placeholder="Nhập tài khoàn hoặc email của bạn"
-            />
+          <div class="footer-mobile__follow-us">
+            Theo dõi chúng tôi
+            <div class="footer-mobile__list-follow-icon">
+              <img src="./assets/icon/youtube.png" alt="" class="footer-mobile__follow-icon" />
+              <img src="./assets/icon/facebook.png" alt="" class="footer-mobile__follow-icon" />
+              <img src="./assets/icon/tiktok.png" alt="" class="footer-mobile__follow-icon" />
+            </div>
           </div>
-          <div class="login-box__input-item">
-            <label for="register__phone" class="login-box__input-label"
-              >Sô điện thoại của bạn <span style="color: red">*</span></label
-            >
-            <input
-              type="text"
-              id="register__phone"
-              name="register__phone"
-              class="login-box__input-text"
-              placeholder="Nhập tài khoàn hoặc email của bạn"
-            />
-          </div>
-          <div class="login-box__input-item">
-            <label for="register__password" class="login-box__input-label"
-              >Mật khẩu <span style="color: red">*</span></label
-            >
-            <input
-              type="password"
-              id="register__password"
-              name="register__password"
-              class="login-box__input-password"
-              placeholder="Nhập mật khẩu của bạn tại đây"
-            />
-          </div>
-          <div class="login-box__input-item">
-            <label for="register__retype-password" class="login-box__input-label"
-              >Nhập lại mật khẩu <span style="color: red">*</span></label
-            >
-            <input
-              type="password"
-              id="register__retype-password"
-              name="register__retype-password"
-              class="login-box__input-password"
-              placeholder="Nhập mật khẩu của bạn tại đây"
-            />
-          </div>
-          <div class="login-box__btn">Đăng ký</div>
-        </div>
-        <div class="login-box__or">
-          <div class="login-box__or-before"></div>
-          Hoặc
-          <div class="login-box__or-after"></div>
-        </div>
-        <div class="login-box__facebook-btn">
-          <img src="./assets/icon/login-facebook-icon.png" alt="Facebook" class="login-box__icon" />
-          Đăng nhập bằng Facebook
-        </div>
-        <div class="login-box__google-btn">
-          <img src="./assets/icon/login-google-icon.png" alt="Goolge" class="login-box__icon" />
-          Đăng nhập bằng Google
+          <div class="footer-mobile__copyright-text">© 2022 VNFarm. All rights reserved.</div>
         </div>
       </div>
     </div>
+  </footer>
 
-    <!-- Register Agent Modal component -->
-    <div id="registerAgentModal" class="modal">
-      <div class="register-agent__box">
-        <span class="register-agent__close-btn">&times;</span>
-        <img src="./assets/img/logo.svg" alt="Logo" class="register-agent__logo" />
-        <div class="register-agent__header">Đăng ký làm đại lý</div>
-        <div class="register-agent__input-item">
-          <label for="login__acc" class="register-agent__input-label"
-            >Tên của bạn <span style="color: red">*</span></label
-          >
-          <input
-            type="text"
-            id="login__acc"
-            name="login__acc"
-            class="register-agent__input-text"
-            placeholder="Nhập tài khoàn hoặc email của bạn"
-          />
+  <!-- Login Modal component -->
+  <div id="loginModal" class="modal">
+    <div class="login-box">
+      <span class="login-box__close-btn">&times;</span>
+      <img src="./assets/img/logo.svg" alt="Logo" class="login-box__logo" />
+      <div class="login-box__list-tab">
+        <div class="login-box__tab active">Đăng nhập</div>
+        <div class="login-box__tab">Đăng ký</div>
+      </div>
+      <div class="login-box__tab-content active">
+        <div class="login-box__input-item">
+          <label for="login__acc" class="login-box__input-label">Tài khoản hoặc email <span
+              style="color: red">*</span></label>
+          <input type="text" id="login__acc" name="login__acc" class="login-box__input-text"
+            placeholder="Nhập tài khoàn hoặc email của bạn" />
         </div>
-        <div class="register-agent__input-item">
-          <label for="login__acc" class="register-agent__input-label"
-            >Tài khoản hoặc email <span style="color: red">*</span></label
-          >
-          <input
-            type="text"
-            id="login__acc"
-            name="login__acc"
-            class="register-agent__input-text"
-            placeholder="Nhập tài khoàn hoặc email của bạn"
-          />
+        <div class="login-box__input-item">
+          <label for="login__password" class="login-box__input-label">Mật khẩu <span style="color: red">*</span></label>
+          <input type="password" id="login__password" name="login__password" class="login-box__input-password"
+            placeholder="Nhập mật khẩu của bạn tại đây" />
         </div>
-        <div class="register-agent__input-item">
-          <label for="login__acc" class="register-agent__input-label"
-            >Sô điện thoại của bạn <span style="color: red">*</span></label
-          >
-          <input
-            type="text"
-            id="login__acc"
-            name="login__acc"
-            class="register-agent__input-text"
-            placeholder="Nhập tài khoàn hoặc email của bạn"
-          />
+        <div class="login-box__list-action">
+          <div class="login-box__save-password">
+            <input type="checkbox" class="login-box__checkbox" />Lưu mật khẩu
+          </div>
+          <div class="login-box__forgot-password">Quên mật khẩu ?</div>
         </div>
-        <div class="register-agent__input-item">
-          <label for="login__acc" class="register-agent__input-label">Địa chỉ <span style="color: red">*</span></label>
-          <input
-            type="text"
-            id="login__acc"
-            name="login__acc"
-            class="register-agent__input-text"
-            placeholder="Nhập tài khoàn hoặc email của bạn"
-          />
+        <div class="login-box__btn">Đăng nhập</div>
+      </div>
+      <div class="login-box__tab-content">
+        <div class="login-box__input-item">
+          <label for="register__fname" class="login-box__input-label">Tên của bạn <span
+              style="color: red">*</span></label>
+          <input type="text" id="register__fname" name="register__fname" class="login-box__input-text"
+            placeholder="Nhập tên của bạn" />
         </div>
-        <div class="register-agent__input-item">
-          <label for="login__acc" class="register-agent__input-label">Thông tin hiện tại</label>
-          <select class="register-agent__select">
-            <option class="register-agent__select-option" value="a">Đang kinh doanh vật tư nông nghiệp</option>
-            <option class="register-agent__select-option" value="b">Chưa kinh doanh/Muốn hợp tác</option>
-            <option class="register-agent__select-option" value="c">Đang kinh doanh Online</option>
-          </select>
+        <div class="login-box__input-item">
+          <label for="register__acc" class="login-box__input-label">Tài khoản hoặc email <span
+              style="color: red">*</span></label>
+          <input type="text" id="register__acc" name="register__acc" class="login-box__input-text"
+            placeholder="Nhập tài khoàn hoặc email của bạn" />
         </div>
+        <div class="login-box__input-item">
+          <label for="register__phone" class="login-box__input-label">Sô điện thoại của bạn <span
+              style="color: red">*</span></label>
+          <input type="text" id="register__phone" name="register__phone" class="login-box__input-text"
+            placeholder="Nhập tài khoàn hoặc email của bạn" />
+        </div>
+        <div class="login-box__input-item">
+          <label for="register__password" class="login-box__input-label">Mật khẩu <span
+              style="color: red">*</span></label>
+          <input type="password" id="register__password" name="register__password" class="login-box__input-password"
+            placeholder="Nhập mật khẩu của bạn tại đây" />
+        </div>
+        <div class="login-box__input-item">
+          <label for="register__retype-password" class="login-box__input-label">Nhập lại mật khẩu <span
+              style="color: red">*</span></label>
+          <input type="password" id="register__retype-password" name="register__retype-password"
+            class="login-box__input-password" placeholder="Nhập mật khẩu của bạn tại đây" />
+        </div>
+        <div class="login-box__btn">Đăng ký</div>
+      </div>
+      <div class="login-box__or">
+        <div class="login-box__or-before"></div>
+        Hoặc
+        <div class="login-box__or-after"></div>
+      </div>
+      <div class="login-box__facebook-btn">
+        <img src="./assets/icon/login-facebook-icon.png" alt="Facebook" class="login-box__icon" />
+        Đăng nhập bằng Facebook
+      </div>
+      <div class="login-box__google-btn">
+        <img src="./assets/icon/login-google-icon.png" alt="Goolge" class="login-box__icon" />
+        Đăng nhập bằng Google
       </div>
     </div>
-    <script src="./assets/js/main.js"></script>
-  </body>
+  </div>
+
+  <!-- Register Agent Modal component -->
+  <div id="registerAgentModal" class="modal">
+    <div class="register-agent__box">
+      <span class="register-agent__close-btn">&times;</span>
+      <img src="./assets/img/logo.svg" alt="Logo" class="register-agent__logo" />
+      <div class="register-agent__header">Đăng ký làm đại lý</div>
+      <div class="register-agent__input-item">
+        <label for="login__acc" class="register-agent__input-label">Tên của bạn <span
+            style="color: red">*</span></label>
+        <input type="text" id="login__acc" name="login__acc" class="register-agent__input-text"
+          placeholder="Nhập tài khoàn hoặc email của bạn" />
+      </div>
+      <div class="register-agent__input-item">
+        <label for="login__acc" class="register-agent__input-label">Tài khoản hoặc email <span
+            style="color: red">*</span></label>
+        <input type="text" id="login__acc" name="login__acc" class="register-agent__input-text"
+          placeholder="Nhập tài khoàn hoặc email của bạn" />
+      </div>
+      <div class="register-agent__input-item">
+        <label for="login__acc" class="register-agent__input-label">Sô điện thoại của bạn <span
+            style="color: red">*</span></label>
+        <input type="text" id="login__acc" name="login__acc" class="register-agent__input-text"
+          placeholder="Nhập tài khoàn hoặc email của bạn" />
+      </div>
+      <div class="register-agent__input-item">
+        <label for="login__acc" class="register-agent__input-label">Địa chỉ <span style="color: red">*</span></label>
+        <input type="text" id="login__acc" name="login__acc" class="register-agent__input-text"
+          placeholder="Nhập tài khoàn hoặc email của bạn" />
+      </div>
+      <div class="register-agent__input-item">
+        <label for="login__acc" class="register-agent__input-label">Thông tin hiện tại</label>
+        <select class="register-agent__select">
+          <option class="register-agent__select-option" value="a">Đang kinh doanh vật tư nông nghiệp</option>
+          <option class="register-agent__select-option" value="b">Chưa kinh doanh/Muốn hợp tác</option>
+          <option class="register-agent__select-option" value="c">Đang kinh doanh Online</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/main.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".swiperListProduct", {
+      slidesPerView: 5,
+      // spaceBetween: 30,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
+    });
+  </script>
+</body>
+
 </html>
